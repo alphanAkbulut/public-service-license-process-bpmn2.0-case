@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2014" height="970" viewBox="0 0 2014 970" font-family="'Source Sans 3', 'Segoe UI', Arial, sans-serif">
+<title>Stage 4 — Commission review and fee collection</title>
+<defs><marker id="seq" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#22201c"/></marker><marker id="seqa" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#c8371e"/></marker><marker id="msg" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#fff" stroke="#22201c" stroke-width="1"/></marker><marker id="msgstart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8"><circle cx="5" cy="5" r="3.5" fill="#fff" stroke="#22201c" stroke-width="1"/></marker></defs>
+<rect width="2014" height="970" fill="#ffffff"/>
+<rect x="10" y="20" width="1994" height="910" fill="#fff" stroke="#22201c" stroke-width="1.4"/>
+<line x1="40" y1="20" x2="40" y2="930" stroke="#22201c" stroke-width="1.4"/>
+<text transform="translate(30.0,475.0) rotate(-90)" text-anchor="middle" font-size="13" font-weight="600" fill="#22201c">Municipality</text>
+<rect x="40" y="20" width="1964" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="20" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(53.0,85.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Licensing &amp;</tspan><tspan x="0" dy="13">Inspection</tspan><tspan x="0" dy="13">Directorate</tspan></text>
+<rect x="40" y="150" width="1964" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="150" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,280.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Automated Notifications</tspan></text>
+<rect x="40" y="410" width="1964" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="410" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,540.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Accrual Staff</tspan></text>
+<rect x="40" y="670" width="1964" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="670" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,800.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Cashier</tspan></text>
+<path d="M197.0 85.0 L284.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M414.0 85.0 L494.0 85.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M544.0 85.0 L664.0 85.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M519.0 110.0 L519.0 305.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M584.0 345.0 L671.0 345.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M689.0 110.0 L689.0 215.0 L794.0 215.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M714.0 85.0 L1004.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M924.0 215.0 L1029.0 215.0 L1029.0 110.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1054.0 85.0 L1094.0 85.0 L1094.0 475.0 L1134.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1264.0 475.0 L1344.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1369.0 500.0 L1369.0 587.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1394.0 475.0 L1539.0 475.0 L1539.0 695.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1604.0 735.0 L1684.0 735.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1709.0 760.0 L1709.0 847.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1734.0 735.0 L1861.0 735.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M334.0 155.0 L340.4 125.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="219.0" y="155.0" width="230" height="66" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M231.0 155.0 H219.0 V221.0 H231.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="227.0" y="172.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="227.0" dy="0">Commission is internal practice, not</tspan><tspan x="227.0" dy="14">required by the regulation for sıhhi</tspan><tspan x="227.0" dy="14">premises. Rejection path added on the</tspan><tspan x="227.0" dy="14">author&#x27;s confirmation.</tspan></text>
+<path d="M1409.0 380.0 L1379.5 450.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="1409.0" y="347.0" width="230" height="66" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M1421.0 347.0 H1409.0 V413.0 H1421.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="1417.0" y="364.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="1417.0" dy="0">Parallel gateways make the source&#x27;s</tspan><tspan x="1417.0" dy="14">double outgoing arrows explicit.</tspan><tspan x="1417.0" dy="14">Escalations read as &#x27;debt due:</tspan><tspan x="1417.0" dy="14">transfer to collection&#x27;.</tspan></text>
+<circle cx="179" cy="85.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.4"/><text x="179.0" y="119.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="179.0" dy="0">Ready for commission</tspan><tspan x="179.0" dy="13.5">review</tspan></text>
+<rect x="284.0" y="45.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(291.0,51.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="349.0" y="78.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="349.0" dy="0">Evaluate in</tspan><tspan x="349.0" dy="14">licensing</tspan><tspan x="349.0" dy="14">commission</tspan></text>
+<path d="M519 60.0 L544 85.0 L519 110.0 L494 85.0 Z" fill="#fff" stroke="#c8371e" stroke-width="1.4"/><path d="M511.5 77.5 L526.5 92.5 M526.5 77.5 L511.5 92.5" stroke="#c8371e" stroke-width="3.4" stroke-linecap="round"/><text x="539.0" y="55.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#c8371e"><tspan x="539.0" dy="0">Commission decision?</tspan></text>
+<rect x="454.0" y="305.0" width="130" height="80" rx="9" fill="#fbe9e4" stroke="#c8371e" stroke-width="1.4" stroke-dasharray="7 4"/><g transform="translate(462.0,313.0)"><rect x="0" y="0" width="15" height="10" fill="#22201c" stroke="#22201c" stroke-width="1.1"/><path d="M0 0 L7.5 5.5 L15 0" fill="none" stroke="#fff" stroke-width="1.1"/></g><text x="519.0" y="345.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="519.0" dy="0">Send commission</tspan><tspan x="519.0" dy="14">rejection notice</tspan></text>
+<circle cx="689" cy="345.0" r="16.5" fill="#fff" stroke="#c8371e" stroke-width="3.6"/><path d="M683,352.0 L687,339.0 L691,346.0 L695,338.0 L692,352.0 L688,344.0 Z" fill="#c8371e" stroke="#c8371e" stroke-width="1.1" stroke-linejoin="round"/><text x="689.0" y="379.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#c8371e"><tspan x="689.0" dy="0">Rejected by</tspan><tspan x="689.0" dy="13.5">commission</tspan></text>
+<path d="M689 60.0 L714 85.0 L689 110.0 L664 85.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M681.5 77.5 L696.5 92.5 M696.5 77.5 L681.5 92.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="709.0" y="41.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="709.0" dy="0">E-mail address</tspan><tspan x="709.0" dy="13.5">registered?</tspan></text>
+<rect x="794.0" y="175.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(802.0,183.0)"><rect x="0" y="0" width="15" height="10" fill="#22201c" stroke="#22201c" stroke-width="1.1"/><path d="M0 0 L7.5 5.5 L15 0" fill="none" stroke="#fff" stroke-width="1.1"/></g><text x="859.0" y="208.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="859.0" dy="0">Send info e-mail</tspan><tspan x="859.0" dy="14">and accrual</tspan><tspan x="859.0" dy="14">invitation</tspan></text>
+<path d="M1029 60.0 L1054 85.0 L1029 110.0 L1004 85.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1021.5 77.5 L1036.5 92.5 M1036.5 77.5 L1021.5 92.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1134.0" y="435.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1141.0,441.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1199.0" y="475.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1199.0" dy="0">Create license fee</tspan><tspan x="1199.0" dy="14">accrual</tspan></text>
+<path d="M1369 450.0 L1394 475.0 L1369 500.0 L1344 475.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1369 465.0 V485.0 M1359 475.0 H1379" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="1369" cy="605.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><path d="M1369,597.0 L1375,612.0 L1369,607.0 L1363,612.0 Z" fill="#22201c" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/><text x="1395.0" y="602.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1395.0" dy="0">Debt due: transfer</tspan><tspan x="1395.0" dy="13.5">to collection</tspan></text>
+<rect x="1474.0" y="695.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1481.0,701.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1539.0" y="742.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1539.0" dy="0">Collect license fee</tspan></text>
+<path d="M1709 710.0 L1734 735.0 L1709 760.0 L1684 735.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1709 725.0 V745.0 M1699 735.0 H1719" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="1709" cy="865.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><path d="M1709,857.0 L1715,872.0 L1709,867.0 L1703,872.0 Z" fill="#22201c" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/><text x="1735.0" y="862.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1735.0" dy="0">Debt due: transfer</tspan><tspan x="1735.0" dy="13.5">to collection</tspan></text>
+<circle cx="1879" cy="735.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="1879.0" y="769.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1879.0" dy="0">License fee</tspan><tspan x="1879.0" dy="13.5">collected</tspan></text>
+<rect x="548.0" y="67.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="550.0" y="78.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="550.0" dy="0">Approved</tspan></text>
+<rect x="523.0" y="127.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="525.0" y="138.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="525.0" dy="0">Rejected</tspan></text>
+<rect x="693.0" y="127.0" width="97.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="695.0" y="138.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="695.0" dy="0">Yes (label added)</tspan></text>
+<rect x="718.0" y="67.0" width="114.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="720.0" y="78.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="720.0" dy="0">No e-mail registered</tspan></text>
+</svg>

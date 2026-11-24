@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1164" height="320" viewBox="0 0 1164 320" font-family="'Source Sans 3', 'Segoe UI', Arial, sans-serif">
+<title>Stage 6 — License and inform applicant</title>
+<defs><marker id="seq" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#22201c"/></marker><marker id="seqa" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#c8371e"/></marker><marker id="msg" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#fff" stroke="#22201c" stroke-width="1"/></marker><marker id="msgstart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8"><circle cx="5" cy="5" r="3.5" fill="#fff" stroke="#22201c" stroke-width="1"/></marker></defs>
+<rect width="1164" height="320" fill="#ffffff"/>
+<rect x="10" y="20" width="1144" height="260" fill="#fff" stroke="#22201c" stroke-width="1.4"/>
+<line x1="40" y1="20" x2="40" y2="280" stroke="#22201c" stroke-width="1.4"/>
+<text transform="translate(30.0,150.0) rotate(-90)" text-anchor="middle" font-size="13" font-weight="600" fill="#22201c">Municipality</text>
+<rect x="40" y="20" width="1114" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="20" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,85.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Rapporteur</tspan></text>
+<rect x="40" y="150" width="1114" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="150" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(59.5,215.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Automated</tspan><tspan x="0" dy="13">Notifications</tspan></text>
+<path d="M197.0 85.0 L284.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M414.0 85.0 L494.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M519.0 110.0 L519.0 215.0 L624.0 215.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M544.0 85.0 L834.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M754.0 215.0 L859.0 215.0 L859.0 110.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M884.0 85.0 L1011.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M374.0 147.0 L365.1 125.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="249.0" y="147.0" width="250" height="52" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M261.0 147.0 H249.0 V199.0 H261.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="257.0" y="164.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="257.0" dy="0">Issues the finalised license: the</tspan><tspan x="257.0" dy="14">declaration-based license becomes final</tspan><tspan x="257.0" dy="14">after the inspection (Art. 13).</tspan></text>
+<circle cx="179" cy="85.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.4"/><text x="179.0" y="119.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="179.0" dy="0">License approved</tspan></text>
+<rect x="284.0" y="45.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(291.0,51.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="349.0" y="78.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="349.0" dy="0">License the</tspan><tspan x="349.0" dy="14">business and inform</tspan><tspan x="349.0" dy="14">the citizen</tspan></text>
+<path d="M519 60.0 L544 85.0 L519 110.0 L494 85.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M511.5 77.5 L526.5 92.5 M526.5 77.5 L511.5 92.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="539.0" y="41.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="539.0" dy="0">E-mail address</tspan><tspan x="539.0" dy="13.5">registered?</tspan></text>
+<rect x="624.0" y="175.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(632.0,183.0)"><rect x="0" y="0" width="15" height="10" fill="#22201c" stroke="#22201c" stroke-width="1.1"/><path d="M0 0 L7.5 5.5 L15 0" fill="none" stroke="#fff" stroke-width="1.1"/></g><text x="689.0" y="215.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="689.0" dy="0">Send license</tspan><tspan x="689.0" dy="14">approval notice</tspan></text>
+<path d="M859 60.0 L884 85.0 L859 110.0 L834 85.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M851.5 77.5 L866.5 92.5 M866.5 77.5 L851.5 92.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="1029" cy="85.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="1029.0" y="119.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1029.0" dy="0">License issued</tspan></text>
+<rect x="523.0" y="127.0" width="97.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="525.0" y="138.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="525.0" dy="0">Yes (label added)</tspan></text>
+<rect x="548.0" y="67.0" width="92.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="550.0" y="78.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="550.0" dy="0">No (label added)</tspan></text>
+</svg>

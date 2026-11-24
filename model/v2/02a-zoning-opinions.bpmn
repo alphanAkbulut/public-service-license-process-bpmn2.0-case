@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Defs_P2a" targetNamespace="https://github.com/alphanAkbulut/public-service-license-process-bpmn2.0-case" exporter="tools/v2/build.py" exporterVersion="2.0">
+  <bpmn:collaboration id="Collab_P2a">
+    <bpmn:participant id="Part_P2a" name="Municipality" processRef="Process_02a_zoning_opinions" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_02a_zoning_opinions" name="Stage 2a — Prepare zoning opinions" isExecutable="false">
+    <bpmn:startEvent id="P2a_s" name="Zoning status queried">
+      <bpmn:outgoing>P2a_Flow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:parallelGateway id="P2a_gP">
+      <bpmn:incoming>P2a_Flow_0</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_1</bpmn:outgoing>
+      <bpmn:outgoing>P2a_Flow_2</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:userTask id="P2a_tL1" name="Building Inspection Chief — handle request">
+      <bpmn:documentation>Source step O14: Yapı Denetim Şefi (sol kol, ilk adım)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_1</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_3</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_gL1">
+      <bpmn:incoming>P2a_Flow_3</bpmn:incoming>
+      <bpmn:incoming>P2a_Flow_9</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_4</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P2a_tL2" name="Rapporteur — prepare report">
+      <bpmn:documentation>Source step O15: Raportör (sol kol)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_4</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_5</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_gL2">
+      <bpmn:incoming>P2a_Flow_5</bpmn:incoming>
+      <bpmn:incoming>P2a_Flow_13</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_6</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P2a_tL3" name="Building Inspection Chief — review report">
+      <bpmn:documentation>Source step O16: Yapı Denetim Şefi (sol kol, kontrol)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_6</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_7</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_xL1" name="Chief decision?">
+      <bpmn:incoming>P2a_Flow_7</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_8</bpmn:outgoing>
+      <bpmn:outgoing>P2a_Flow_9</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="P2a_gL3">
+      <bpmn:incoming>P2a_Flow_8</bpmn:incoming>
+      <bpmn:incoming>P2a_Flow_29</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_10</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P2a_tL4" name="Zoning Director — approve opinion">
+      <bpmn:documentation>Source step O17: İmar ve Şehircilik Müd. (sol kol)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_10</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_11</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_xL2" name="Director decision?">
+      <bpmn:incoming>P2a_Flow_11</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_12</bpmn:outgoing>
+      <bpmn:outgoing>P2a_Flow_13</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P2a_tR1" name="Mapping Chief — handle request">
+      <bpmn:documentation>Source step O18: Harita Şefi (sağ kol, ilk adım)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_2</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_14</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_gR1">
+      <bpmn:incoming>P2a_Flow_14</bpmn:incoming>
+      <bpmn:incoming>P2a_Flow_20</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_15</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P2a_tR2" name="Rapporteur — prepare report">
+      <bpmn:documentation>Source step O19: Raportör (sağ kol)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_15</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_16</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_gR2">
+      <bpmn:incoming>P2a_Flow_16</bpmn:incoming>
+      <bpmn:incoming>P2a_Flow_24</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_17</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P2a_tR3" name="Building Inspection Chief — review report">
+      <bpmn:documentation>Source step O20: Yapı Denetim Şefi (sağ kol, kontrol)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_17</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_18</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_xR1" name="Chief decision?">
+      <bpmn:incoming>P2a_Flow_18</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_19</bpmn:outgoing>
+      <bpmn:outgoing>P2a_Flow_20</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="P2a_gR3">
+      <bpmn:incoming>P2a_Flow_19</bpmn:incoming>
+      <bpmn:incoming>P2a_Flow_30</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_21</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P2a_tR4" name="Zoning Director — approve opinion">
+      <bpmn:documentation>Source step O21: İmar ve Şehircilik Müd. (sağ kol)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_21</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_22</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_xR2" name="Director decision?">
+      <bpmn:incoming>P2a_Flow_22</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_23</bpmn:outgoing>
+      <bpmn:outgoing>P2a_Flow_24</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:parallelGateway id="P2a_gJ">
+      <bpmn:incoming>P2a_Flow_12</bpmn:incoming>
+      <bpmn:incoming>P2a_Flow_23</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_25</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:userTask id="P2a_tD" name="Deputy Mayor — approve zoning opinions">
+      <bpmn:documentation>Source step O22: Başkan Yardımcısı (imar görüşleri)</bpmn:documentation>
+      <bpmn:incoming>P2a_Flow_25</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_26</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P2a_xD" name="Deputy mayor decision?">
+      <bpmn:incoming>P2a_Flow_26</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_27</bpmn:outgoing>
+      <bpmn:outgoing>P2a_Flow_28</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="P2a_e" name="Zoning opinions approved">
+      <bpmn:incoming>P2a_Flow_27</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:parallelGateway id="P2a_gPB">
+      <bpmn:incoming>P2a_Flow_28</bpmn:incoming>
+      <bpmn:outgoing>P2a_Flow_29</bpmn:outgoing>
+      <bpmn:outgoing>P2a_Flow_30</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:sequenceFlow id="P2a_Flow_0" sourceRef="P2a_s" targetRef="P2a_gP" />
+    <bpmn:sequenceFlow id="P2a_Flow_1" sourceRef="P2a_gP" targetRef="P2a_tL1" />
+    <bpmn:sequenceFlow id="P2a_Flow_2" sourceRef="P2a_gP" targetRef="P2a_tR1" />
+    <bpmn:sequenceFlow id="P2a_Flow_3" sourceRef="P2a_tL1" targetRef="P2a_gL1" />
+    <bpmn:sequenceFlow id="P2a_Flow_4" sourceRef="P2a_gL1" targetRef="P2a_tL2" />
+    <bpmn:sequenceFlow id="P2a_Flow_5" sourceRef="P2a_tL2" targetRef="P2a_gL2" />
+    <bpmn:sequenceFlow id="P2a_Flow_6" sourceRef="P2a_gL2" targetRef="P2a_tL3" />
+    <bpmn:sequenceFlow id="P2a_Flow_7" sourceRef="P2a_tL3" targetRef="P2a_xL1" />
+    <bpmn:sequenceFlow id="P2a_Flow_8" name="Approved" sourceRef="P2a_xL1" targetRef="P2a_gL3" />
+    <bpmn:sequenceFlow id="P2a_Flow_9" name="Rejected" sourceRef="P2a_xL1" targetRef="P2a_gL1" />
+    <bpmn:sequenceFlow id="P2a_Flow_10" sourceRef="P2a_gL3" targetRef="P2a_tL4" />
+    <bpmn:sequenceFlow id="P2a_Flow_11" sourceRef="P2a_tL4" targetRef="P2a_xL2" />
+    <bpmn:sequenceFlow id="P2a_Flow_12" name="Approved" sourceRef="P2a_xL2" targetRef="P2a_gJ" />
+    <bpmn:sequenceFlow id="P2a_Flow_13" name="Rejected" sourceRef="P2a_xL2" targetRef="P2a_gL2" />
+    <bpmn:sequenceFlow id="P2a_Flow_14" sourceRef="P2a_tR1" targetRef="P2a_gR1" />
+    <bpmn:sequenceFlow id="P2a_Flow_15" sourceRef="P2a_gR1" targetRef="P2a_tR2" />
+    <bpmn:sequenceFlow id="P2a_Flow_16" sourceRef="P2a_tR2" targetRef="P2a_gR2" />
+    <bpmn:sequenceFlow id="P2a_Flow_17" sourceRef="P2a_gR2" targetRef="P2a_tR3" />
+    <bpmn:sequenceFlow id="P2a_Flow_18" sourceRef="P2a_tR3" targetRef="P2a_xR1" />
+    <bpmn:sequenceFlow id="P2a_Flow_19" name="Approved" sourceRef="P2a_xR1" targetRef="P2a_gR3" />
+    <bpmn:sequenceFlow id="P2a_Flow_20" name="Rejected" sourceRef="P2a_xR1" targetRef="P2a_gR1" />
+    <bpmn:sequenceFlow id="P2a_Flow_21" sourceRef="P2a_gR3" targetRef="P2a_tR4" />
+    <bpmn:sequenceFlow id="P2a_Flow_22" sourceRef="P2a_tR4" targetRef="P2a_xR2" />
+    <bpmn:sequenceFlow id="P2a_Flow_23" name="Approved" sourceRef="P2a_xR2" targetRef="P2a_gJ" />
+    <bpmn:sequenceFlow id="P2a_Flow_24" name="Rejected" sourceRef="P2a_xR2" targetRef="P2a_gR2" />
+    <bpmn:sequenceFlow id="P2a_Flow_25" sourceRef="P2a_gJ" targetRef="P2a_tD" />
+    <bpmn:sequenceFlow id="P2a_Flow_26" sourceRef="P2a_tD" targetRef="P2a_xD" />
+    <bpmn:sequenceFlow id="P2a_Flow_27" name="Approved" sourceRef="P2a_xD" targetRef="P2a_e" />
+    <bpmn:sequenceFlow id="P2a_Flow_28" name="Rejected" sourceRef="P2a_xD" targetRef="P2a_gPB" />
+    <bpmn:sequenceFlow id="P2a_Flow_29" sourceRef="P2a_gPB" targetRef="P2a_gL3" />
+    <bpmn:sequenceFlow id="P2a_Flow_30" sourceRef="P2a_gPB" targetRef="P2a_gR3" />
+    <bpmn:textAnnotation id="P2a_a1"><bpmn:text>Kept as drawn: &#x27;Yapı Denetim Şefi&#x27; (the branch starts with the Mapping Chief, so &#x27;Harita Şefi&#x27; may have been meant; these are municipal titles, not defined in the regulation)</bpmn:text></bpmn:textAnnotation>
+    <bpmn:association id="P2a_a1_assoc" sourceRef="P2a_a1" targetRef="P2a_tR3" />
+    <bpmn:textAnnotation id="P2a_a2"><bpmn:text>Source labels these tasks with the role only; the action wording is interpreted</bpmn:text></bpmn:textAnnotation>
+    <bpmn:association id="P2a_a2_assoc" sourceRef="P2a_a2" targetRef="P2a_tL1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_P2a" name="Stage 2a — Prepare zoning opinions">
+    <bpmndi:BPMNPlane id="Plane_P2a" bpmnElement="Collab_P2a">
+      <bpmndi:BPMNShape id="Part_P2a_di" bpmnElement="Part_P2a" isHorizontal="true"><dc:Bounds x="10" y="20" width="2674" height="700" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_s_di" bpmnElement="P2a_s"><dc:Bounds x="161" y="352" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="138" y="393" width="82" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gP_di" bpmnElement="P2a_gP"><dc:Bounds x="324" y="345" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tL1_di" bpmnElement="P2a_tL1"><dc:Bounds x="454" y="190" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gL1_di" bpmnElement="P2a_gL1" isMarkerVisible="true"><dc:Bounds x="664" y="205" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tL2_di" bpmnElement="P2a_tL2"><dc:Bounds x="794" y="190" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gL2_di" bpmnElement="P2a_gL2" isMarkerVisible="true"><dc:Bounds x="1004" y="205" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tL3_di" bpmnElement="P2a_tL3"><dc:Bounds x="1134" y="190" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_xL1_di" bpmnElement="P2a_xL1" isMarkerVisible="true"><dc:Bounds x="1344" y="205" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1389" y="257" width="94" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gL3_di" bpmnElement="P2a_gL3" isMarkerVisible="true"><dc:Bounds x="1514" y="205" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tL4_di" bpmnElement="P2a_tL4"><dc:Bounds x="1644" y="190" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_xL2_di" bpmnElement="P2a_xL2" isMarkerVisible="true"><dc:Bounds x="1854" y="205" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1899" y="189" width="112" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tR1_di" bpmnElement="P2a_tR1"><dc:Bounds x="454" y="470" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gR1_di" bpmnElement="P2a_gR1" isMarkerVisible="true"><dc:Bounds x="664" y="485" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tR2_di" bpmnElement="P2a_tR2"><dc:Bounds x="794" y="470" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gR2_di" bpmnElement="P2a_gR2" isMarkerVisible="true"><dc:Bounds x="1004" y="485" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tR3_di" bpmnElement="P2a_tR3"><dc:Bounds x="1134" y="470" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_xR1_di" bpmnElement="P2a_xR1" isMarkerVisible="true"><dc:Bounds x="1344" y="485" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1389" y="469" width="94" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gR3_di" bpmnElement="P2a_gR3" isMarkerVisible="true"><dc:Bounds x="1514" y="485" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tR4_di" bpmnElement="P2a_tR4"><dc:Bounds x="1644" y="470" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_xR2_di" bpmnElement="P2a_xR2" isMarkerVisible="true"><dc:Bounds x="1854" y="485" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1899" y="537" width="112" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gJ_di" bpmnElement="P2a_gJ"><dc:Bounds x="2024" y="345" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_tD_di" bpmnElement="P2a_tD"><dc:Bounds x="2154" y="330" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_xD_di" bpmnElement="P2a_xD" isMarkerVisible="true"><dc:Bounds x="2364" y="345" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="2409" y="397" width="76" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_e_di" bpmnElement="P2a_e"><dc:Bounds x="2371" y="212" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="2415" y="216" width="94" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_gPB_di" bpmnElement="P2a_gPB"><dc:Bounds x="2534" y="345" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_a1_di" bpmnElement="P2a_a1"><dc:Bounds x="1269" y="585" width="260" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P2a_a2_di" bpmnElement="P2a_a2"><dc:Bounds x="459" y="110" width="220" height="52" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="P2a_Flow_0_di" bpmnElement="P2a_Flow_0"><di:waypoint x="197" y="370" /><di:waypoint x="324" y="370" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_1_di" bpmnElement="P2a_Flow_1"><di:waypoint x="349" y="345" /><di:waypoint x="349" y="230" /><di:waypoint x="454" y="230" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_2_di" bpmnElement="P2a_Flow_2"><di:waypoint x="349" y="395" /><di:waypoint x="349" y="510" /><di:waypoint x="454" y="510" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_3_di" bpmnElement="P2a_Flow_3"><di:waypoint x="584" y="230" /><di:waypoint x="689" y="230" /><di:waypoint x="689" y="205" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_4_di" bpmnElement="P2a_Flow_4"><di:waypoint x="714" y="230" /><di:waypoint x="794" y="230" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_5_di" bpmnElement="P2a_Flow_5"><di:waypoint x="924" y="230" /><di:waypoint x="1029" y="230" /><di:waypoint x="1029" y="205" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_6_di" bpmnElement="P2a_Flow_6"><di:waypoint x="1054" y="230" /><di:waypoint x="1134" y="230" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_7_di" bpmnElement="P2a_Flow_7"><di:waypoint x="1264" y="230" /><di:waypoint x="1344" y="230" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_8_di" bpmnElement="P2a_Flow_8"><di:waypoint x="1394" y="230" /><di:waypoint x="1514" y="230" /><bpmndi:BPMNLabel><dc:Bounds x="1400" y="212" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_9_di" bpmnElement="P2a_Flow_9"><di:waypoint x="1369" y="205" /><di:waypoint x="1369" y="160" /><di:waypoint x="689" y="160" /><di:waypoint x="689" y="205" /><bpmndi:BPMNLabel><dc:Bounds x="1375" y="174" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_10_di" bpmnElement="P2a_Flow_10"><di:waypoint x="1564" y="230" /><di:waypoint x="1644" y="230" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_11_di" bpmnElement="P2a_Flow_11"><di:waypoint x="1774" y="230" /><di:waypoint x="1854" y="230" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_12_di" bpmnElement="P2a_Flow_12"><di:waypoint x="1904" y="230" /><di:waypoint x="2049" y="230" /><di:waypoint x="2049" y="345" /><bpmndi:BPMNLabel><dc:Bounds x="1910" y="212" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_13_di" bpmnElement="P2a_Flow_13"><di:waypoint x="1879" y="255" /><di:waypoint x="1879" y="300" /><di:waypoint x="1029" y="300" /><di:waypoint x="1029" y="255" /><bpmndi:BPMNLabel><dc:Bounds x="1885" y="272" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_14_di" bpmnElement="P2a_Flow_14"><di:waypoint x="584" y="510" /><di:waypoint x="689" y="510" /><di:waypoint x="689" y="485" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_15_di" bpmnElement="P2a_Flow_15"><di:waypoint x="714" y="510" /><di:waypoint x="794" y="510" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_16_di" bpmnElement="P2a_Flow_16"><di:waypoint x="924" y="510" /><di:waypoint x="1029" y="510" /><di:waypoint x="1029" y="485" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_17_di" bpmnElement="P2a_Flow_17"><di:waypoint x="1054" y="510" /><di:waypoint x="1134" y="510" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_18_di" bpmnElement="P2a_Flow_18"><di:waypoint x="1264" y="510" /><di:waypoint x="1344" y="510" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_19_di" bpmnElement="P2a_Flow_19"><di:waypoint x="1394" y="510" /><di:waypoint x="1514" y="510" /><bpmndi:BPMNLabel><dc:Bounds x="1400" y="492" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_20_di" bpmnElement="P2a_Flow_20"><di:waypoint x="1369" y="535" /><di:waypoint x="1369" y="580" /><di:waypoint x="689" y="580" /><di:waypoint x="689" y="535" /><bpmndi:BPMNLabel><dc:Bounds x="1375" y="552" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_21_di" bpmnElement="P2a_Flow_21"><di:waypoint x="1564" y="510" /><di:waypoint x="1644" y="510" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_22_di" bpmnElement="P2a_Flow_22"><di:waypoint x="1774" y="510" /><di:waypoint x="1854" y="510" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_23_di" bpmnElement="P2a_Flow_23"><di:waypoint x="1904" y="510" /><di:waypoint x="2049" y="510" /><di:waypoint x="2049" y="395" /><bpmndi:BPMNLabel><dc:Bounds x="1910" y="492" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_24_di" bpmnElement="P2a_Flow_24"><di:waypoint x="1879" y="485" /><di:waypoint x="1879" y="440" /><di:waypoint x="1029" y="440" /><di:waypoint x="1029" y="485" /><bpmndi:BPMNLabel><dc:Bounds x="1885" y="454" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_25_di" bpmnElement="P2a_Flow_25"><di:waypoint x="2074" y="370" /><di:waypoint x="2154" y="370" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_26_di" bpmnElement="P2a_Flow_26"><di:waypoint x="2284" y="370" /><di:waypoint x="2364" y="370" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_27_di" bpmnElement="P2a_Flow_27"><di:waypoint x="2389" y="345" /><di:waypoint x="2389" y="248" /><bpmndi:BPMNLabel><dc:Bounds x="2395" y="314" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_28_di" bpmnElement="P2a_Flow_28"><di:waypoint x="2414" y="370" /><di:waypoint x="2534" y="370" /><bpmndi:BPMNLabel><dc:Bounds x="2420" y="352" width="44" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_29_di" bpmnElement="P2a_Flow_29"><di:waypoint x="2559" y="345" /><di:waypoint x="2559" y="125" /><di:waypoint x="1539" y="125" /><di:waypoint x="1539" y="205" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_Flow_30_di" bpmnElement="P2a_Flow_30"><di:waypoint x="2559" y="395" /><di:waypoint x="2559" y="615" /><di:waypoint x="1539" y="615" /><di:waypoint x="1539" y="535" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_a1_assoc_di" bpmnElement="P2a_a1_assoc"><di:waypoint x="1269" y="625" /><di:waypoint x="1223" y="550" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P2a_a2_assoc_di" bpmnElement="P2a_a2_assoc"><di:waypoint x="569" y="162" /><di:waypoint x="548" y="190" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

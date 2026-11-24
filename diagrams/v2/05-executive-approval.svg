@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2269" height="840" viewBox="0 0 2269 840" font-family="'Source Sans 3', 'Segoe UI', Arial, sans-serif">
+<title>Stage 5 — Executive approval</title>
+<defs><marker id="seq" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#22201c"/></marker><marker id="seqa" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#c8371e"/></marker><marker id="msg" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#fff" stroke="#22201c" stroke-width="1"/></marker><marker id="msgstart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8"><circle cx="5" cy="5" r="3.5" fill="#fff" stroke="#22201c" stroke-width="1"/></marker></defs>
+<rect width="2269" height="840" fill="#ffffff"/>
+<rect x="10" y="20" width="2249" height="780" fill="#fff" stroke="#22201c" stroke-width="1.4"/>
+<line x1="40" y1="20" x2="40" y2="800" stroke="#22201c" stroke-width="1.4"/>
+<text transform="translate(30.0,410.0) rotate(-90)" text-anchor="middle" font-size="13" font-weight="600" fill="#22201c">Municipality</text>
+<rect x="40" y="20" width="2219" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="20" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,150.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Licensing &amp; Inspection Directorate</tspan></text>
+<rect x="40" y="280" width="2219" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="280" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,345.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Deputy Mayor</tspan></text>
+<rect x="40" y="410" width="2219" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="410" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,540.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Mayor</tspan></text>
+<rect x="40" y="670" width="2219" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="670" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(59.5,735.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Automated</tspan><tspan x="0" dy="13">Notifications</tspan></text>
+<path d="M197.0 215.0 L284.0 215.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M414.0 215.0 L454.0 215.0 L454.0 345.0 L494.0 345.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M544.0 345.0 L624.0 345.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M754.0 345.0 L834.0 345.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M859.0 320.0 L859.0 85.0 L964.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M884.0 345.0 L1029.0 345.0 L1029.0 450.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1094.0 85.0 L1174.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1224.0 85.0 L1304.0 85.0 L1304.0 605.0 L1389.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1199.0 60.0 L1199.0 36.0 L519.0 36.0 L519.0 320.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1519.0 605.0 L1599.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1624.0 630.0 L1624.0 735.0 L1729.0 735.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1649.0 605.0 L1964.0 605.0 L1964.0 710.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1859.0 735.0 L1939.0 735.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1989.0 735.0 L2116.0 735.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1054.0 475.0 L1134.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1264.0 475.0 L1344.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1394.0 475.0 L1521.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1369.0 450.0 L1369.0 85.0 L1474.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1604.0 85.0 L1684.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1734.0 85.0 L1861.0 85.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1709.0 110.0 L1709.0 533.0 L1029.0 533.0 L1029.0 500.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M659.0 293.0 L665.9 305.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="539.0" y="227.0" width="240" height="66" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M551.0 227.0 H539.0 V293.0 H551.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="547.0" y="244.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="547.0" dy="0">Two-level approval is internal</tspan><tspan x="547.0" dy="14">practice. Art. 6: the license is</tspan><tspan x="547.0" dy="14">signed by the head of the authority or</tspan><tspan x="547.0" dy="14">a delegate.</tspan></text>
+<circle cx="179" cy="215.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.4"/><text x="179.0" y="249.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="179.0" dy="0">License fee</tspan><tspan x="179.0" dy="13.5">collected</tspan></text>
+<rect x="284.0" y="175.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(291.0,181.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="349.0" y="215.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="349.0" dy="0">Process license</tspan><tspan x="349.0" dy="14">approval</tspan></text>
+<path d="M519 320.0 L544 345.0 L519 370.0 L494 345.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M511.5 337.5 L526.5 352.5 M526.5 337.5 L511.5 352.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="624.0" y="305.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(631.0,311.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="689.0" y="352.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="689.0" dy="0">Approve license</tspan></text>
+<path d="M859 320.0 L884 345.0 L859 370.0 L834 345.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M851.5 337.5 L866.5 352.5 M866.5 337.5 L851.5 352.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="879.0" y="383.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="879.0" dy="0">Deputy mayor</tspan><tspan x="879.0" dy="13.5">decision?</tspan></text>
+<rect x="964.0" y="45.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(971.0,51.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1029.0" y="78.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1029.0" dy="0">Inform about</tspan><tspan x="1029.0" dy="14">cancellation of the</tspan><tspan x="1029.0" dy="14">application</tspan></text>
+<path d="M1199 60.0 L1224 85.0 L1199 110.0 L1174 85.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1191.5 77.5 L1206.5 92.5 M1206.5 77.5 L1191.5 92.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1219.0" y="123.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1219.0" dy="0">Cancel or resubmit?</tspan></text>
+<rect x="1389.0" y="565.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1396.0,571.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1454.0" y="598.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1454.0" dy="0">Process</tspan><tspan x="1454.0" dy="14">cancellation</tspan><tspan x="1454.0" dy="14">notification</tspan></text>
+<path d="M1624.0 580.0 L1649.0 605.0 L1624.0 630.0 L1599.0 605.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1616.5 597.5 L1631.5 612.5 M1631.5 597.5 L1616.5 612.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1644.0" y="561.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1644.0" dy="0">E-mail address</tspan><tspan x="1644.0" dy="13.5">registered?</tspan></text>
+<rect x="1729.0" y="695.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1737.0,703.0)"><rect x="0" y="0" width="15" height="10" fill="#22201c" stroke="#22201c" stroke-width="1.1"/><path d="M0 0 L7.5 5.5 L15 0" fill="none" stroke="#fff" stroke-width="1.1"/></g><text x="1794.0" y="735.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1794.0" dy="0">Send cancellation</tspan><tspan x="1794.0" dy="14">e-mail</tspan></text>
+<path d="M1964.0 710.0 L1989.0 735.0 L1964.0 760.0 L1939.0 735.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1956.5 727.5 L1971.5 742.5 M1971.5 727.5 L1956.5 742.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="2134.0" cy="735.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><path d="M2128.0,742.0 L2132.0,729.0 L2136.0,736.0 L2140.0,728.0 L2137.0,742.0 L2133.0,734.0 Z" fill="#22201c" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/><text x="2134.0" y="769.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="2134.0" dy="0">Cancelled — deputy</tspan><tspan x="2134.0" dy="13.5">mayor level</tspan></text>
+<path d="M1029 450.0 L1054 475.0 L1029 500.0 L1004 475.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1021.5 467.5 L1036.5 482.5 M1036.5 467.5 L1021.5 482.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1134.0" y="435.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1141.0,441.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1199.0" y="482.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1199.0" dy="0">Approve license</tspan></text>
+<path d="M1369 450.0 L1394 475.0 L1369 500.0 L1344 475.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1361.5 467.5 L1376.5 482.5 M1376.5 467.5 L1361.5 482.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1389.0" y="513.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1389.0" dy="0">Mayor decision?</tspan></text>
+<circle cx="1539" cy="475.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="1539.0" y="509.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1539.0" dy="0">License approved</tspan></text>
+<rect x="1474.0" y="45.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1481.0,51.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1539.0" y="78.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1539.0" dy="0">Inform about</tspan><tspan x="1539.0" dy="14">application</tspan><tspan x="1539.0" dy="14">cancellation</tspan></text>
+<path d="M1709 60.0 L1734 85.0 L1709 110.0 L1684 85.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1701.5 77.5 L1716.5 92.5 M1716.5 77.5 L1701.5 92.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1729.0" y="55.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1729.0" dy="0">Cancel or resubmit?</tspan></text>
+<circle cx="1879" cy="85.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><path d="M1873,92.0 L1877,79.0 L1881,86.0 L1885,78.0 L1882,92.0 L1878,84.0 Z" fill="#22201c" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/><text x="1879.0" y="119.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1879.0" dy="0">Cancelled — mayor</tspan><tspan x="1879.0" dy="13.5">level</tspan></text>
+<rect x="863.0" y="289.0" width="37.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="865.0" y="300.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="865.0" dy="0">Cancel</tspan></text>
+<rect x="888.0" y="327.0" width="42.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="890.0" y="338.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="890.0" dy="0">Approve</tspan></text>
+<rect x="1228.0" y="67.0" width="103.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1230.0" y="78.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1230.0" dy="0">Cancel application</tspan></text>
+<rect x="1203.0" y="29.0" width="125.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1205.0" y="40.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="1205.0" dy="0">Resubmit (label added)</tspan></text>
+<rect x="1628.0" y="647.0" width="97.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1630.0" y="658.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="1630.0" dy="0">Yes (label added)</tspan></text>
+<rect x="1653.0" y="587.0" width="92.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1655.0" y="598.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="1655.0" dy="0">No (label added)</tspan></text>
+<rect x="1398.0" y="457.0" width="42.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1400.0" y="468.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1400.0" dy="0">Approve</tspan></text>
+<rect x="1373.0" y="419.0" width="37.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1375.0" y="430.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1375.0" dy="0">Cancel</tspan></text>
+<rect x="1738.0" y="67.0" width="103.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1740.0" y="78.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1740.0" dy="0">Cancel application</tspan></text>
+<rect x="1713.0" y="127.0" width="119.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1715.0" y="138.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1715.0" dy="0">Resubmit for approval</tspan></text>
+</svg>

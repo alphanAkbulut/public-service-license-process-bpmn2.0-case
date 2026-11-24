@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Defs_P3" targetNamespace="https://github.com/alphanAkbulut/public-service-license-process-bpmn2.0-case" exporter="tools/v2/build.py" exporterVersion="2.0">
+  <bpmn:error id="Err_Second" name="Cancelled: after second inspection" errorCode="SECOND_INSPECTION_FAILED" />
+  <bpmn:error id="Err_Zoning" name="Cancelled: zoning status" errorCode="ZONING_REJECTED" />
+  <bpmn:collaboration id="Collab_P3">
+    <bpmn:participant id="Part_P3" name="Municipality" processRef="Process_03_site_inspection" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_03_site_inspection" name="Stage 3 — Inspect premises" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_P3">
+      <bpmn:lane id="P3_Lane_LD" name="Licensing &amp; Inspection Directorate">
+        <bpmn:flowNodeRef>P3_s</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_t1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_xZ</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_t2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_xI</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_tm</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_t3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_t5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_gP</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_e</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="P3_Lane_INSP" name="Field Inspection Team">
+        <bpmn:flowNodeRef>P3_t4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_xI2</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="P3_Lane_SYS" name="Automated Notifications">
+        <bpmn:flowNodeRef>P3_xM1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_t2s</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_xM1m</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_eZ</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_tN</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_xM2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_t6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_xM2m</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P3_eD</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="P3_s" name="Technical opinions completed">
+      <bpmn:outgoing>P3_Flow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="P3_t1" name="Start site inspection">
+      <bpmn:documentation>Source step O23: Ruhsat ve Denetim Müdürlüğü - Saha Denetimini Başlatma</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_0</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_1</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P3_xZ" name="Zoning status?">
+      <bpmn:incoming>P3_Flow_1</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_2</bpmn:outgoing>
+      <bpmn:outgoing>P3_Flow_3</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="P3_xM1" name="E-mail address registered?">
+      <bpmn:incoming>P3_Flow_2</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_4</bpmn:outgoing>
+      <bpmn:outgoing>P3_Flow_5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="P3_t2s" name="Send zoning-based cancellation notice">
+      <bpmn:documentation>Source step O24: İmar Durumuna Göre Başvuru İptal Bilgilendirmesi</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_4</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_6</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:exclusiveGateway id="P3_xM1m">
+      <bpmn:incoming>P3_Flow_5</bpmn:incoming>
+      <bpmn:incoming>P3_Flow_6</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_7</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="P3_eZ" name="Cancelled — zoning status">
+      <bpmn:incoming>P3_Flow_7</bpmn:incoming>
+      <bpmn:errorEventDefinition id="P3_eZ_ed" errorRef="Err_Zoning" />
+    </bpmn:endEvent>
+    <bpmn:userTask id="P3_t2" name="Carry out site inspection">
+      <bpmn:documentation>Source step O25: Ruhsat ve Denetim Müdürlüğü - Saha Denetimi</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_3</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_8</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P3_xI" name="Inspection result?">
+      <bpmn:incoming>P3_Flow_8</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_9</bpmn:outgoing>
+      <bpmn:outgoing>P3_Flow_10</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="P3_tN" name="Send deficiency notice (SMS or e-mail)">
+      <bpmn:incoming>P3_Flow_10</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_11</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:intermediateCatchEvent id="P3_tm" name="15 days">
+      <bpmn:documentation>Source step T1: Zamanlayıcı 15 Gün</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_11</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_12</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="P3_tm_td"><bpmn:timeDuration xsi:type="bpmn:tFormalExpression">P15D</bpmn:timeDuration></bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:userTask id="P3_t3" name="Start second site inspection">
+      <bpmn:documentation>Source step O26: Ruhsat ve Denetim Müdürlüğü - 2. Saha Denetimini Başlatma</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_12</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_13</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="P3_t4" name="Carry out second site inspection">
+      <bpmn:documentation>Source step O27: Ruhsat ve Denetim Müdürlüğü 2. Saha Denetimi</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_13</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_14</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P3_xI2" name="Second inspection result?">
+      <bpmn:incoming>P3_Flow_14</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_15</bpmn:outgoing>
+      <bpmn:outgoing>P3_Flow_16</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P3_t5" name="Cancel application after second inspection">
+      <bpmn:documentation>Source step O28: 2. Denetim Sonrası Başvurunun İptali</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_16</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_17</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P3_xM2" name="E-mail address registered?">
+      <bpmn:incoming>P3_Flow_17</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_18</bpmn:outgoing>
+      <bpmn:outgoing>P3_Flow_19</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="P3_t6" name="Send application cancellation notice">
+      <bpmn:documentation>Source step O29: Başvuru İptal Bilgilendirmesi</bpmn:documentation>
+      <bpmn:incoming>P3_Flow_18</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_20</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:exclusiveGateway id="P3_xM2m">
+      <bpmn:incoming>P3_Flow_19</bpmn:incoming>
+      <bpmn:incoming>P3_Flow_20</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_21</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="P3_eD" name="Cancelled — after second inspection">
+      <bpmn:incoming>P3_Flow_21</bpmn:incoming>
+      <bpmn:errorEventDefinition id="P3_eD_ed" errorRef="Err_Second" />
+    </bpmn:endEvent>
+    <bpmn:exclusiveGateway id="P3_gP">
+      <bpmn:incoming>P3_Flow_9</bpmn:incoming>
+      <bpmn:incoming>P3_Flow_15</bpmn:incoming>
+      <bpmn:outgoing>P3_Flow_22</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="P3_e" name="Ready for commission review">
+      <bpmn:incoming>P3_Flow_22</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="P3_Flow_0" sourceRef="P3_s" targetRef="P3_t1" />
+    <bpmn:sequenceFlow id="P3_Flow_1" sourceRef="P3_t1" targetRef="P3_xZ" />
+    <bpmn:sequenceFlow id="P3_Flow_2" name="Zoning rejected" sourceRef="P3_xZ" targetRef="P3_xM1" />
+    <bpmn:sequenceFlow id="P3_Flow_3" name="Zoning approved" sourceRef="P3_xZ" targetRef="P3_t2" />
+    <bpmn:sequenceFlow id="P3_Flow_4" name="Yes (label added)" sourceRef="P3_xM1" targetRef="P3_t2s" />
+    <bpmn:sequenceFlow id="P3_Flow_5" name="No (label added)" sourceRef="P3_xM1" targetRef="P3_xM1m" />
+    <bpmn:sequenceFlow id="P3_Flow_6" sourceRef="P3_t2s" targetRef="P3_xM1m" />
+    <bpmn:sequenceFlow id="P3_Flow_7" sourceRef="P3_xM1m" targetRef="P3_eZ" />
+    <bpmn:sequenceFlow id="P3_Flow_8" sourceRef="P3_t2" targetRef="P3_xI" />
+    <bpmn:sequenceFlow id="P3_Flow_9" name="Passed (label added)" sourceRef="P3_xI" targetRef="P3_gP" />
+    <bpmn:sequenceFlow id="P3_Flow_10" name="Correction needed (label added)" sourceRef="P3_xI" targetRef="P3_tN" />
+    <bpmn:sequenceFlow id="P3_Flow_11" sourceRef="P3_tN" targetRef="P3_tm" />
+    <bpmn:sequenceFlow id="P3_Flow_12" sourceRef="P3_tm" targetRef="P3_t3" />
+    <bpmn:sequenceFlow id="P3_Flow_13" sourceRef="P3_t3" targetRef="P3_t4" />
+    <bpmn:sequenceFlow id="P3_Flow_14" sourceRef="P3_t4" targetRef="P3_xI2" />
+    <bpmn:sequenceFlow id="P3_Flow_15" name="Passed (label added)" sourceRef="P3_xI2" targetRef="P3_gP" />
+    <bpmn:sequenceFlow id="P3_Flow_16" name="Failed (label added)" sourceRef="P3_xI2" targetRef="P3_t5" />
+    <bpmn:sequenceFlow id="P3_Flow_17" sourceRef="P3_t5" targetRef="P3_xM2" />
+    <bpmn:sequenceFlow id="P3_Flow_18" name="Yes (label added)" sourceRef="P3_xM2" targetRef="P3_t6" />
+    <bpmn:sequenceFlow id="P3_Flow_19" name="No (label added)" sourceRef="P3_xM2" targetRef="P3_xM2m" />
+    <bpmn:sequenceFlow id="P3_Flow_20" sourceRef="P3_t6" targetRef="P3_xM2m" />
+    <bpmn:sequenceFlow id="P3_Flow_21" sourceRef="P3_xM2m" targetRef="P3_eD" />
+    <bpmn:sequenceFlow id="P3_Flow_22" sourceRef="P3_gP" targetRef="P3_e" />
+    <bpmn:textAnnotation id="P3_a1"><bpmn:text>Added on the author&#x27;s confirmation: the system sends the deficiency notice automatically by SMS or e-mail</bpmn:text></bpmn:textAnnotation>
+    <bpmn:association id="P3_a1_assoc" sourceRef="P3_a1" targetRef="P3_tN" />
+    <bpmn:textAnnotation id="P3_a2"><bpmn:text>Art. 13: reach this step within 1 month of the declaration-based license. In practice earlier stages finish in a few days.</bpmn:text></bpmn:textAnnotation>
+    <bpmn:association id="P3_a2_assoc" sourceRef="P3_a2" targetRef="P3_t1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_P3" name="Stage 3 — Inspect premises">
+    <bpmndi:BPMNPlane id="Plane_P3" bpmnElement="Collab_P3">
+      <bpmndi:BPMNShape id="Part_P3_di" bpmnElement="Part_P3" isHorizontal="true"><dc:Bounds x="10" y="20" width="2504" height="650" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_Lane_LD_di" bpmnElement="P3_Lane_LD" isHorizontal="true"><dc:Bounds x="40" y="20" width="2474" height="260" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_Lane_INSP_di" bpmnElement="P3_Lane_INSP" isHorizontal="true"><dc:Bounds x="40" y="280" width="2474" height="130" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_Lane_SYS_di" bpmnElement="P3_Lane_SYS" isHorizontal="true"><dc:Bounds x="40" y="410" width="2474" height="260" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_s_di" bpmnElement="P3_s"><dc:Bounds x="161" y="67" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="123" y="108" width="112" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_t1_di" bpmnElement="P3_t1"><dc:Bounds x="284" y="45" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_xZ_di" bpmnElement="P3_xZ" isMarkerVisible="true"><dc:Bounds x="494" y="60" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="539" y="44" width="88" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_xM1_di" bpmnElement="P3_xM1" isMarkerVisible="true"><dc:Bounds x="494" y="580" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="411" y="550" width="88" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_t2s_di" bpmnElement="P3_t2s"><dc:Bounds x="624" y="565" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_xM1m_di" bpmnElement="P3_xM1m" isMarkerVisible="true"><dc:Bounds x="834" y="580" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_eZ_di" bpmnElement="P3_eZ"><dc:Bounds x="1011" y="587" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="973" y="628" width="112" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_t2_di" bpmnElement="P3_t2"><dc:Bounds x="624" y="45" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_xI_di" bpmnElement="P3_xI" isMarkerVisible="true"><dc:Bounds x="834" y="60" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="727" y="44" width="112" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_tN_di" bpmnElement="P3_tN" bioc:stroke="#c8371e" bioc:fill="#fbe9e4"><dc:Bounds x="964" y="435" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_tm_di" bpmnElement="P3_tm"><dc:Bounds x="1011" y="197" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="957" y="208" width="46" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_t3_di" bpmnElement="P3_t3"><dc:Bounds x="1134" y="175" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_t4_di" bpmnElement="P3_t4"><dc:Bounds x="1304" y="305" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_xI2_di" bpmnElement="P3_xI2" isMarkerVisible="true"><dc:Bounds x="1514" y="320" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1559" y="372" width="106" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_t5_di" bpmnElement="P3_t5"><dc:Bounds x="1644" y="175" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_xM2_di" bpmnElement="P3_xM2" isMarkerVisible="true"><dc:Bounds x="1854" y="450" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1771" y="420" width="88" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_t6_di" bpmnElement="P3_t6"><dc:Bounds x="1984" y="435" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_xM2m_di" bpmnElement="P3_xM2m" isMarkerVisible="true"><dc:Bounds x="2194" y="450" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_eD_di" bpmnElement="P3_eD"><dc:Bounds x="2371" y="457" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="2336" y="498" width="106" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_gP_di" bpmnElement="P3_gP" isMarkerVisible="true"><dc:Bounds x="1854" y="60" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_e_di" bpmnElement="P3_e"><dc:Bounds x="2031" y="67" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="1987" y="108" width="124" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_a1_di" bpmnElement="P3_a1"><dc:Bounds x="1104" y="437" width="230" height="52" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P3_a2_di" bpmnElement="P3_a2"><dc:Bounds x="239" y="147" width="230" height="66" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="P3_Flow_0_di" bpmnElement="P3_Flow_0"><di:waypoint x="197" y="85" /><di:waypoint x="284" y="85" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_1_di" bpmnElement="P3_Flow_1"><di:waypoint x="414" y="85" /><di:waypoint x="494" y="85" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_2_di" bpmnElement="P3_Flow_2"><di:waypoint x="519" y="110" /><di:waypoint x="519" y="580" /><bpmndi:BPMNLabel><dc:Bounds x="525" y="127" width="82" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_3_di" bpmnElement="P3_Flow_3"><di:waypoint x="544" y="85" /><di:waypoint x="624" y="85" /><bpmndi:BPMNLabel><dc:Bounds x="550" y="67" width="82" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_4_di" bpmnElement="P3_Flow_4"><di:waypoint x="544" y="605" /><di:waypoint x="624" y="605" /><bpmndi:BPMNLabel><dc:Bounds x="550" y="587" width="94" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_5_di" bpmnElement="P3_Flow_5"><di:waypoint x="519" y="630" /><di:waypoint x="519" y="655" /><di:waypoint x="859" y="655" /><di:waypoint x="859" y="630" /><bpmndi:BPMNLabel><dc:Bounds x="525" y="647" width="88" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_6_di" bpmnElement="P3_Flow_6"><di:waypoint x="754" y="605" /><di:waypoint x="834" y="605" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_7_di" bpmnElement="P3_Flow_7"><di:waypoint x="884" y="605" /><di:waypoint x="1011" y="605" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_8_di" bpmnElement="P3_Flow_8"><di:waypoint x="754" y="85" /><di:waypoint x="834" y="85" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_9_di" bpmnElement="P3_Flow_9"><di:waypoint x="859" y="60" /><di:waypoint x="859" y="36" /><di:waypoint x="1879" y="36" /><di:waypoint x="1879" y="60" /><bpmndi:BPMNLabel><dc:Bounds x="865" y="29" width="110" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_10_di" bpmnElement="P3_Flow_10"><di:waypoint x="859" y="110" /><di:waypoint x="859" y="475" /><di:waypoint x="964" y="475" /><bpmndi:BPMNLabel><dc:Bounds x="865" y="127" width="170" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_11_di" bpmnElement="P3_Flow_11" bioc:stroke="#c8371e"><di:waypoint x="1029" y="435" /><di:waypoint x="1029" y="233" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_12_di" bpmnElement="P3_Flow_12"><di:waypoint x="1047" y="215" /><di:waypoint x="1134" y="215" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_13_di" bpmnElement="P3_Flow_13"><di:waypoint x="1264" y="215" /><di:waypoint x="1284" y="215" /><di:waypoint x="1284" y="345" /><di:waypoint x="1304" y="345" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_14_di" bpmnElement="P3_Flow_14"><di:waypoint x="1434" y="345" /><di:waypoint x="1514" y="345" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_15_di" bpmnElement="P3_Flow_15"><di:waypoint x="1539" y="320" /><di:waypoint x="1539" y="85" /><di:waypoint x="1854" y="85" /><bpmndi:BPMNLabel><dc:Bounds x="1545" y="289" width="110" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_16_di" bpmnElement="P3_Flow_16"><di:waypoint x="1564" y="345" /><di:waypoint x="1709" y="345" /><di:waypoint x="1709" y="255" /><bpmndi:BPMNLabel><dc:Bounds x="1570" y="327" width="110" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_17_di" bpmnElement="P3_Flow_17"><di:waypoint x="1774" y="215" /><di:waypoint x="1879" y="215" /><di:waypoint x="1879" y="450" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_18_di" bpmnElement="P3_Flow_18"><di:waypoint x="1904" y="475" /><di:waypoint x="1984" y="475" /><bpmndi:BPMNLabel><dc:Bounds x="1910" y="457" width="94" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_19_di" bpmnElement="P3_Flow_19"><di:waypoint x="1879" y="500" /><di:waypoint x="1879" y="525" /><di:waypoint x="2219" y="525" /><di:waypoint x="2219" y="500" /><bpmndi:BPMNLabel><dc:Bounds x="1885" y="517" width="88" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_20_di" bpmnElement="P3_Flow_20"><di:waypoint x="2114" y="475" /><di:waypoint x="2194" y="475" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_21_di" bpmnElement="P3_Flow_21"><di:waypoint x="2244" y="475" /><di:waypoint x="2371" y="475" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_Flow_22_di" bpmnElement="P3_Flow_22"><di:waypoint x="1904" y="85" /><di:waypoint x="2031" y="85" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_a1_assoc_di" bpmnElement="P3_a1_assoc"><di:waypoint x="1104" y="463" /><di:waypoint x="1094" y="465" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P3_a2_assoc_di" bpmnElement="P3_a2_assoc"><di:waypoint x="354" y="147" /><di:waypoint x="352" y="125" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
