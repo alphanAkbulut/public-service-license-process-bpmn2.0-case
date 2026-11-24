@@ -150,11 +150,11 @@ PROCESSES.append(dict(
     flows=[
         F("S0", "C1"), F("C1", "C2"), F("C2", "C3"), F("C3", "C4"),
         F("C4", "C5"), F("C5", "C6"), F("C6", "E0"),
-        F("B3a", "GC", "Zoning rejected", lab="left", added=True),
-        F("B3b", "GC", "Failed 2nd inspection", added=True),
-        F("B4", "GC", "Commission rejected", added=True),
-        F("B5a", "GC", "Deputy mayor level", lab="left", added=True),
-        F("B5b", "GC", "Mayor level", added=True),
+        F("B3a", "GC", "Zoning", lab="left", added=True),
+        F("B3b", "GC", "2nd inspection", added=True),
+        F("B4", "GC", "Commission", added=True),
+        F("B5a", "GC", "Deputy mayor", lab="left", added=True),
+        F("B5b", "GC", "Mayor", added=True),
         F("GC", "C7", added=True), F("C7", "EC", added=True),
     ],
     messages=[

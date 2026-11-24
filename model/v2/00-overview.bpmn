@@ -93,11 +93,11 @@
     <bpmn:sequenceFlow id="P0_Flow_4" sourceRef="P0_C4" targetRef="P0_C5" />
     <bpmn:sequenceFlow id="P0_Flow_5" sourceRef="P0_C5" targetRef="P0_C6" />
     <bpmn:sequenceFlow id="P0_Flow_6" sourceRef="P0_C6" targetRef="P0_E0" />
-    <bpmn:sequenceFlow id="P0_Flow_7" name="Zoning rejected" sourceRef="P0_B3a" targetRef="P0_GC" />
-    <bpmn:sequenceFlow id="P0_Flow_8" name="Failed 2nd inspection" sourceRef="P0_B3b" targetRef="P0_GC" />
-    <bpmn:sequenceFlow id="P0_Flow_9" name="Commission rejected" sourceRef="P0_B4" targetRef="P0_GC" />
-    <bpmn:sequenceFlow id="P0_Flow_10" name="Deputy mayor level" sourceRef="P0_B5a" targetRef="P0_GC" />
-    <bpmn:sequenceFlow id="P0_Flow_11" name="Mayor level" sourceRef="P0_B5b" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_7" name="Zoning" sourceRef="P0_B3a" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_8" name="2nd inspection" sourceRef="P0_B3b" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_9" name="Commission" sourceRef="P0_B4" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_10" name="Deputy mayor" sourceRef="P0_B5a" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_11" name="Mayor" sourceRef="P0_B5b" targetRef="P0_GC" />
     <bpmn:sequenceFlow id="P0_Flow_12" sourceRef="P0_GC" targetRef="P0_C7" />
     <bpmn:sequenceFlow id="P0_Flow_13" sourceRef="P0_C7" targetRef="P0_EC" />
     <bpmn:textAnnotation id="P0_a1"><bpmn:text>Business is usually already operating when it applies (as-is practice). Art. 6: premises opened without a license are closed.</bpmn:text></bpmn:textAnnotation>
@@ -132,11 +132,11 @@
       <bpmndi:BPMNEdge id="P0_Flow_4_di" bpmnElement="P0_Flow_4"><di:waypoint x="924" y="225" /><di:waypoint x="964" y="225" /></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="P0_Flow_5_di" bpmnElement="P0_Flow_5"><di:waypoint x="1094" y="225" /><di:waypoint x="1134" y="225" /></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="P0_Flow_6_di" bpmnElement="P0_Flow_6"><di:waypoint x="1264" y="225" /><di:waypoint x="1351" y="225" /></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="P0_Flow_7_di" bpmnElement="P0_Flow_7" bioc:stroke="#c8371e"><di:waypoint x="657" y="283" /><di:waypoint x="657" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="568" y="300" width="82" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="P0_Flow_8_di" bpmnElement="P0_Flow_8" bioc:stroke="#c8371e"><di:waypoint x="721" y="283" /><di:waypoint x="721" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="727" y="300" width="116" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="P0_Flow_9_di" bpmnElement="P0_Flow_9" bioc:stroke="#c8371e"><di:waypoint x="859" y="283" /><di:waypoint x="859" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="865" y="300" width="104" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="P0_Flow_10_di" bpmnElement="P0_Flow_10" bioc:stroke="#c8371e"><di:waypoint x="997" y="283" /><di:waypoint x="997" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="892" y="300" width="99" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="P0_Flow_11_di" bpmnElement="P0_Flow_11" bioc:stroke="#c8371e"><di:waypoint x="1061" y="283" /><di:waypoint x="1061" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="1067" y="300" width="60" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_7_di" bpmnElement="P0_Flow_7" bioc:stroke="#c8371e"><di:waypoint x="657" y="283" /><di:waypoint x="657" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="618" y="300" width="33" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_8_di" bpmnElement="P0_Flow_8" bioc:stroke="#c8371e"><di:waypoint x="721" y="283" /><di:waypoint x="721" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="727" y="300" width="77" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_9_di" bpmnElement="P0_Flow_9" bioc:stroke="#c8371e"><di:waypoint x="859" y="283" /><di:waypoint x="859" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="865" y="300" width="55" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_10_di" bpmnElement="P0_Flow_10" bioc:stroke="#c8371e"><di:waypoint x="997" y="283" /><di:waypoint x="997" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="925" y="300" width="66" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_11_di" bpmnElement="P0_Flow_11" bioc:stroke="#c8371e"><di:waypoint x="1061" y="283" /><di:waypoint x="1061" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="1067" y="300" width="28" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="P0_Flow_12_di" bpmnElement="P0_Flow_12" bioc:stroke="#c8371e"><di:waypoint x="1309" y="355" /><di:waypoint x="1389" y="355" /></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="P0_Flow_13_di" bpmnElement="P0_Flow_13" bioc:stroke="#c8371e"><di:waypoint x="1519" y="355" /><di:waypoint x="1606" y="355" /></bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="P0_g1_di" bpmnElement="P0_g1"><dc:Bounds x="266" y="167" width="506" height="142" /><bpmndi:BPMNLabel><dc:Bounds x="274" y="287" width="264" height="16" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>

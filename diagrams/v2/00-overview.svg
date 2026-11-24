@@ -44,16 +44,16 @@
 <circle cx="859" cy="265.0" r="18.0" fill="#fff" stroke="#c8371e" stroke-width="1.3"/><circle cx="859" cy="265.0" r="14.5" fill="none" stroke="#c8371e" stroke-width="1.3"/><path d="M853,272.0 L857,259.0 L861,266.0 L865,258.0 L862,272.0 L858,264.0 Z" fill="none" stroke="#c8371e" stroke-width="1.1" stroke-linejoin="round"/>
 <circle cx="997" cy="265.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.3"/><circle cx="997" cy="265.0" r="14.5" fill="none" stroke="#22201c" stroke-width="1.3"/><path d="M991,272.0 L995,259.0 L999,266.0 L1003,258.0 L1000,272.0 L996,264.0 Z" fill="none" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/>
 <circle cx="1061" cy="265.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.3"/><circle cx="1061" cy="265.0" r="14.5" fill="none" stroke="#22201c" stroke-width="1.3"/><path d="M1055,272.0 L1059,259.0 L1063,266.0 L1067,258.0 L1064,272.0 L1060,264.0 Z" fill="none" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/>
-<rect x="566.5" y="300.0" width="86.5" height="14" fill="#fff" fill-opacity="0.9"/>
-<text x="651.0" y="311.0" text-anchor="end" font-size="11" font-weight="400" fill="#c8371e"><tspan x="651.0" dy="0">Zoning rejected</tspan></text>
-<rect x="725.0" y="300.0" width="119.5" height="14" fill="#fff" fill-opacity="0.9"/>
-<text x="727.0" y="311.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="727.0" dy="0">Failed 2nd inspection</tspan></text>
-<rect x="863.0" y="300.0" width="108.5" height="14" fill="#fff" fill-opacity="0.9"/>
-<text x="865.0" y="311.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="865.0" dy="0">Commission rejected</tspan></text>
-<rect x="890.0" y="300.0" width="103.0" height="14" fill="#fff" fill-opacity="0.9"/>
-<text x="991.0" y="311.0" text-anchor="end" font-size="11" font-weight="400" fill="#c8371e"><tspan x="991.0" dy="0">Deputy mayor level</tspan></text>
-<rect x="1065.0" y="300.0" width="64.5" height="14" fill="#fff" fill-opacity="0.9"/>
-<text x="1067.0" y="311.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="1067.0" dy="0">Mayor level</tspan></text>
+<rect x="616.0" y="300.0" width="37.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="651.0" y="311.0" text-anchor="end" font-size="11" font-weight="400" fill="#c8371e"><tspan x="651.0" dy="0">Zoning</tspan></text>
+<rect x="725.0" y="300.0" width="81.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="727.0" y="311.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="727.0" dy="0">2nd inspection</tspan></text>
+<rect x="863.0" y="300.0" width="59.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="865.0" y="311.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="865.0" dy="0">Commission</tspan></text>
+<rect x="923.0" y="300.0" width="70.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="991.0" y="311.0" text-anchor="end" font-size="11" font-weight="400" fill="#c8371e"><tspan x="991.0" dy="0">Deputy mayor</tspan></text>
+<rect x="1065.0" y="300.0" width="31.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1067.0" y="311.0" text-anchor="start" font-size="11" font-weight="400" fill="#c8371e"><tspan x="1067.0" dy="0">Mayor</tspan></text>
 <path d="M179.0 90.0 L179.0 207.0" stroke="#22201c" stroke-width="1.2" stroke-dasharray="7 4" fill="none" marker-start="url(#msgstart)" marker-end="url(#msg)"/>
 <text x="185.0" y="140.5" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="185.0" dy="0">Application</tspan></text>
 <path d="M349.0 185.0 L349.0 90.0" stroke="#22201c" stroke-width="1.2" stroke-dasharray="7 4" fill="none" marker-start="url(#msgstart)" marker-end="url(#msg)"/>
