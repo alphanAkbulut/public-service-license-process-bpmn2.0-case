@@ -112,3 +112,7 @@ The analyzed process was implemented as a working software flow. The model serve
 | `case-study/case-study.md` | Short case study |
 | `tools/v2/` | Source model and build script that generate the v2 files |
 | `archive/` | Earlier high-level reading guide, kept for reference |
+
+## License
+
+© 2026 Alphan Akbulut. Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): you may share this work with attribution, but not use it commercially or distribute modified versions.
