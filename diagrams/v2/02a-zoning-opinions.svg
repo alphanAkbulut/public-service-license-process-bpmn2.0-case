@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2694" height="760" viewBox="0 0 2694 760" font-family="'Source Sans 3', 'Segoe UI', Arial, sans-serif">
+<title>Stage 2a — Prepare zoning opinions</title>
+<defs><marker id="seq" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#22201c"/></marker><marker id="seqa" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#c8371e"/></marker><marker id="msg" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#fff" stroke="#22201c" stroke-width="1"/></marker><marker id="msgstart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8"><circle cx="5" cy="5" r="3.5" fill="#fff" stroke="#22201c" stroke-width="1"/></marker></defs>
+<rect width="2694" height="760" fill="#ffffff"/>
+<rect x="10" y="20" width="2674" height="700" fill="#fff" stroke="#22201c" stroke-width="1.4"/>
+<line x1="40" y1="20" x2="40" y2="720" stroke="#22201c" stroke-width="1.4"/>
+<text transform="translate(30.0,370.0) rotate(-90)" text-anchor="middle" font-size="13" font-weight="600" fill="#22201c">Municipality</text>
+<rect x="40" y="20" width="2644" height="700" fill="#fafaf7" stroke="none"/>
+<path d="M197.0 370.0 L324.0 370.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M349.0 345.0 L349.0 230.0 L454.0 230.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M349.0 395.0 L349.0 510.0 L454.0 510.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M584.0 230.0 L689.0 230.0 L689.0 205.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M714.0 230.0 L794.0 230.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M924.0 230.0 L1029.0 230.0 L1029.0 205.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1054.0 230.0 L1134.0 230.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1264.0 230.0 L1344.0 230.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1394.0 230.0 L1514.0 230.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1369.0 205.0 L1369.0 160.0 L689.0 160.0 L689.0 205.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1564.0 230.0 L1644.0 230.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1774.0 230.0 L1854.0 230.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1904.0 230.0 L2049.0 230.0 L2049.0 345.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1879.0 255.0 L1879.0 300.0 L1029.0 300.0 L1029.0 255.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M584.0 510.0 L689.0 510.0 L689.0 485.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M714.0 510.0 L794.0 510.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M924.0 510.0 L1029.0 510.0 L1029.0 485.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1054.0 510.0 L1134.0 510.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1264.0 510.0 L1344.0 510.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1394.0 510.0 L1514.0 510.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1369.0 535.0 L1369.0 580.0 L689.0 580.0 L689.0 535.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1564.0 510.0 L1644.0 510.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1774.0 510.0 L1854.0 510.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1904.0 510.0 L2049.0 510.0 L2049.0 395.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1879.0 485.0 L1879.0 440.0 L1029.0 440.0 L1029.0 485.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2074.0 370.0 L2154.0 370.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2284.0 370.0 L2364.0 370.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2389.0 345.0 L2389.0 248.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2414.0 370.0 L2534.0 370.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2559.0 345.0 L2559.0 125.0 L1539.0 125.0 L1539.0 205.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2559.0 395.0 L2559.0 615.0 L1539.0 615.0 L1539.0 535.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1269.0 625.0 L1223.3 550.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="1269.0" y="585.0" width="260" height="80" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M1281.0 585.0 H1269.0 V665.0 H1281.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="1277.0" y="602.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="1277.0" dy="0">Kept as drawn: &#x27;Yapı Denetim Şefi&#x27; (the</tspan><tspan x="1277.0" dy="14">branch starts with the Mapping Chief, so</tspan><tspan x="1277.0" dy="14">&#x27;Harita Şefi&#x27; may have been meant; these</tspan><tspan x="1277.0" dy="14">are municipal titles, not defined in the</tspan><tspan x="1277.0" dy="14">regulation)</tspan></text>
+<path d="M569.0 162.0 L548.4 190.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="459.0" y="110.0" width="220" height="52" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M471.0 110.0 H459.0 V162.0 H471.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="467.0" y="127.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="467.0" dy="0">Source labels these tasks with the</tspan><tspan x="467.0" dy="14">role only; the action wording is</tspan><tspan x="467.0" dy="14">interpreted</tspan></text>
+<circle cx="179" cy="370.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.4"/><text x="179.0" y="404.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="179.0" dy="0">Zoning status</tspan><tspan x="179.0" dy="13.5">queried</tspan></text>
+<path d="M349 345.0 L374 370.0 L349 395.0 L324 370.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M349 360.0 V380.0 M339 370.0 H359" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="454.0" y="190.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(461.0,196.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="519.0" y="223.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="519.0" dy="0">Building Inspection</tspan><tspan x="519.0" dy="14">Chief — handle</tspan><tspan x="519.0" dy="14">request</tspan></text>
+<path d="M689 205.0 L714 230.0 L689 255.0 L664 230.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M681.5 222.5 L696.5 237.5 M696.5 222.5 L681.5 237.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="794.0" y="190.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(801.0,196.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="859.0" y="230.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="859.0" dy="0">Rapporteur —</tspan><tspan x="859.0" dy="14">prepare report</tspan></text>
+<path d="M1029 205.0 L1054 230.0 L1029 255.0 L1004 230.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1021.5 222.5 L1036.5 237.5 M1036.5 222.5 L1021.5 237.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1134.0" y="190.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1141.0,196.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1199.0" y="223.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1199.0" dy="0">Building Inspection</tspan><tspan x="1199.0" dy="14">Chief — review</tspan><tspan x="1199.0" dy="14">report</tspan></text>
+<path d="M1369 205.0 L1394 230.0 L1369 255.0 L1344 230.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1361.5 222.5 L1376.5 237.5 M1376.5 222.5 L1361.5 237.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1389.0" y="268.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1389.0" dy="0">Chief decision?</tspan></text>
+<path d="M1539 205.0 L1564 230.0 L1539 255.0 L1514 230.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1531.5 222.5 L1546.5 237.5 M1546.5 222.5 L1531.5 237.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1644.0" y="190.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1651.0,196.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1709.0" y="230.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1709.0" dy="0">Zoning Director —</tspan><tspan x="1709.0" dy="14">approve opinion</tspan></text>
+<path d="M1879 205.0 L1904 230.0 L1879 255.0 L1854 230.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1871.5 222.5 L1886.5 237.5 M1886.5 222.5 L1871.5 237.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1899.0" y="200.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1899.0" dy="0">Director decision?</tspan></text>
+<rect x="454.0" y="470.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(461.0,476.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="519.0" y="510.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="519.0" dy="0">Mapping Chief —</tspan><tspan x="519.0" dy="14">handle request</tspan></text>
+<path d="M689 485.0 L714 510.0 L689 535.0 L664 510.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M681.5 502.5 L696.5 517.5 M696.5 502.5 L681.5 517.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="794.0" y="470.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(801.0,476.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="859.0" y="510.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="859.0" dy="0">Rapporteur —</tspan><tspan x="859.0" dy="14">prepare report</tspan></text>
+<path d="M1029 485.0 L1054 510.0 L1029 535.0 L1004 510.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1021.5 502.5 L1036.5 517.5 M1036.5 502.5 L1021.5 517.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1134.0" y="470.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1141.0,476.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1199.0" y="503.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1199.0" dy="0">Building Inspection</tspan><tspan x="1199.0" dy="14">Chief — review</tspan><tspan x="1199.0" dy="14">report</tspan></text>
+<path d="M1369 485.0 L1394 510.0 L1369 535.0 L1344 510.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1361.5 502.5 L1376.5 517.5 M1376.5 502.5 L1361.5 517.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1389.0" y="480.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1389.0" dy="0">Chief decision?</tspan></text>
+<path d="M1539 485.0 L1564 510.0 L1539 535.0 L1514 510.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1531.5 502.5 L1546.5 517.5 M1546.5 502.5 L1531.5 517.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1644.0" y="470.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1651.0,476.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1709.0" y="510.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1709.0" dy="0">Zoning Director —</tspan><tspan x="1709.0" dy="14">approve opinion</tspan></text>
+<path d="M1879 485.0 L1904 510.0 L1879 535.0 L1854 510.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1871.5 502.5 L1886.5 517.5 M1886.5 502.5 L1871.5 517.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1899.0" y="548.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1899.0" dy="0">Director decision?</tspan></text>
+<path d="M2049 345.0 L2074 370.0 L2049 395.0 L2024 370.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M2049 360.0 V380.0 M2039 370.0 H2059" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="2154.0" y="330.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(2161.0,336.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="2219.0" y="363.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="2219.0" dy="0">Deputy Mayor —</tspan><tspan x="2219.0" dy="14">approve zoning</tspan><tspan x="2219.0" dy="14">opinions</tspan></text>
+<path d="M2389 345.0 L2414 370.0 L2389 395.0 L2364 370.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M2381.5 362.5 L2396.5 377.5 M2396.5 362.5 L2381.5 377.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="2409.0" y="408.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="2409.0" dy="0">Deputy mayor</tspan><tspan x="2409.0" dy="13.5">decision?</tspan></text>
+<circle cx="2389" cy="230.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="2415.0" y="227.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="2415.0" dy="0">Zoning opinions</tspan><tspan x="2415.0" dy="13.5">approved</tspan></text>
+<path d="M2559 345.0 L2584 370.0 L2559 395.0 L2534 370.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M2559 360.0 V380.0 M2549 370.0 H2569" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1398.0" y="212.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1400.0" y="223.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1400.0" dy="0">Approved</tspan></text>
+<rect x="1373.0" y="174.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1375.0" y="185.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1375.0" dy="0">Rejected</tspan></text>
+<rect x="1908.0" y="212.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1910.0" y="223.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1910.0" dy="0">Approved</tspan></text>
+<rect x="1883.0" y="272.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1885.0" y="283.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1885.0" dy="0">Rejected</tspan></text>
+<rect x="1398.0" y="492.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1400.0" y="503.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1400.0" dy="0">Approved</tspan></text>
+<rect x="1373.0" y="552.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1375.0" y="563.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1375.0" dy="0">Rejected</tspan></text>
+<rect x="1908.0" y="492.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1910.0" y="503.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1910.0" dy="0">Approved</tspan></text>
+<rect x="1883.0" y="454.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1885.0" y="465.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1885.0" dy="0">Rejected</tspan></text>
+<rect x="2393.0" y="314.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="2395.0" y="325.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="2395.0" dy="0">Approved</tspan></text>
+<rect x="2418.0" y="352.0" width="48.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="2420.0" y="363.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="2420.0" dy="0">Rejected</tspan></text>
+</svg>

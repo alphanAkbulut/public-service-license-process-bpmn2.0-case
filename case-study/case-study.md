@@ -2,7 +2,7 @@
 
 ## The challenge
 
-The municipal license process included many connected activities performed by different roles. Applications could move forward, wait for another review, return for missing information, enter an inspection cycle or close with different outcomes.
+The municipal license process included many connected activities performed by different roles. Applications could move forward, wait for another review, return for correction, enter an inspection cycle or close with different outcomes.
 
 The main challenge was to understand these variations without losing the end-to-end picture and to define the process clearly enough for software implementation.
 

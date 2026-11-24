@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="994" height="450" viewBox="0 0 994 450" font-family="'Source Sans 3', 'Segoe UI', Arial, sans-serif">
+<title>Stage C — Cancel license and close premises</title>
+<defs><marker id="seq" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#22201c"/></marker><marker id="seqa" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#c8371e"/></marker><marker id="msg" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#fff" stroke="#22201c" stroke-width="1"/></marker><marker id="msgstart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8"><circle cx="5" cy="5" r="3.5" fill="#fff" stroke="#22201c" stroke-width="1"/></marker></defs>
+<rect width="994" height="450" fill="#ffffff"/>
+<rect x="10" y="20" width="974" height="390" fill="#fff" stroke="#22201c" stroke-width="1.4"/>
+<line x1="40" y1="20" x2="40" y2="410" stroke="#22201c" stroke-width="1.4"/>
+<text transform="translate(30.0,215.0) rotate(-90)" text-anchor="middle" font-size="13" font-weight="600" fill="#22201c">Municipality</text>
+<rect x="40" y="20" width="944" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="20" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(59.5,85.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Automated</tspan><tspan x="0" dy="13">Notifications</tspan></text>
+<rect x="40" y="150" width="944" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="150" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,280.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Municipal Police (Zabıta)</tspan></text>
+<path d="M197.0 85.0 L284.0 85.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M414.0 85.0 L434.0 85.0 L434.0 215.0 L454.0 215.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M584.0 215.0 L624.0 215.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M754.0 215.0 L841.0 215.0" fill="none" stroke="#c8371e" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#seqa)"/>
+<path d="M429.0 59.0 L414.0 63.9" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="429.0" y="33.0" width="220" height="52" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M441.0 33.0 H429.0 V85.0 H441.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="437.0" y="50.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="437.0" dy="0">Not drawn in the source. Triggered</tspan><tspan x="437.0" dy="14">by any of the four cancellation</tspan><tspan x="437.0" dy="14">outcomes.</tspan></text>
+<path d="M559.0 299.0 L538.0 255.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="559.0" y="273.0" width="250" height="52" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M571.0 273.0 H559.0 V325.0 H571.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="567.0" y="290.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="567.0" dy="0">The business may challenge the decision</tspan><tspan x="567.0" dy="14">in administrative court; that route is</tspan><tspan x="567.0" dy="14">out of scope.</tspan></text>
+<circle cx="179" cy="85.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.4"/><text x="179.0" y="119.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="179.0" dy="0">License cancelled</tspan></text>
+<rect x="284.0" y="45.0" width="130" height="80" rx="9" fill="#fbe9e4" stroke="#c8371e" stroke-width="1.4" stroke-dasharray="7 4"/><g transform="translate(291.0,51.0)"><polygon points="14.00,7.00 11.80,8.99 11.95,11.95 8.99,11.80 7.00,14.00 5.01,11.80 2.05,11.95 2.20,8.99 0.00,7.00 2.20,5.01 2.05,2.05 5.01,2.20 7.00,0.00 8.99,2.20 11.95,2.05 11.80,5.01" fill="#fff" stroke="#22201c" stroke-width="1.1"/><circle cx="7" cy="7" r="2.2" fill="#fff" stroke="#22201c" stroke-width="1.1"/></g><text x="349.0" y="78.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="349.0" dy="0">Create closure work</tspan><tspan x="349.0" dy="14">order for municipal</tspan><tspan x="349.0" dy="14">police</tspan></text>
+<rect x="454.0" y="175.0" width="130" height="80" rx="9" fill="#fbe9e4" stroke="#c8371e" stroke-width="1.4" stroke-dasharray="7 4"/><g transform="translate(461.0,181.0)" fill="#fff" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"><path d="M2 9 V5.5 Q2 4.3 3.2 4.3 Q4.4 4.3 4.4 5.5 V8 V3 Q4.4 1.8 5.6 1.8 Q6.8 1.8 6.8 3 V8 V2.2 Q6.8 1 8 1 Q9.2 1 9.2 2.2 V8 V3.2 Q9.2 2 10.4 2 Q11.6 2 11.6 3.2 V10 Q11.6 15 7 15 Q3.6 15 2.4 12 Z"/></g><text x="519.0" y="208.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="519.0" dy="0">Serve closure</tspan><tspan x="519.0" dy="14">notice and seal</tspan><tspan x="519.0" dy="14">premises (on site)</tspan></text>
+<rect x="624.0" y="175.0" width="130" height="80" rx="9" fill="#fbe9e4" stroke="#c8371e" stroke-width="1.4" stroke-dasharray="7 4"/><g transform="translate(631.0,181.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="689.0" y="215.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="689.0" dy="0">Confirm closure in</tspan><tspan x="689.0" dy="14">system</tspan></text>
+<circle cx="859" cy="215.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="859.0" y="249.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="859.0" dy="0">Premises closed</tspan></text>
+</svg>

@@ -4,4 +4,6 @@
 
 The model has not been shortened, redrawn or simplified. Its full activity-level detail demonstrates the analysis behind the successfully implemented software flow.
 
-`license-process-overview.svg` is an optional reading guide only. It does not replace or represent the complete BPMN model.
+The earlier high-level reading guide (`license-process-overview.svg`) has moved to `archive/` and is kept for reference.
+
+`v2/` holds the rendered diagrams of the structured v2 model, generated from `tools/v2/model.py`. The BPMN 2.0 XML files are in `model/v2/`.

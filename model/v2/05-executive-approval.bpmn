@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Defs_P5" targetNamespace="https://github.com/alphanAkbulut/public-service-license-process-bpmn2.0-case" exporter="tools/v2/build.py" exporterVersion="2.0">
+  <bpmn:error id="Err_Deputy" name="Cancelled: deputy mayor level" errorCode="CANCELLED_DEPUTY" />
+  <bpmn:error id="Err_Mayor" name="Cancelled: mayor level" errorCode="CANCELLED_MAYOR" />
+  <bpmn:collaboration id="Collab_P5">
+    <bpmn:participant id="Part_P5" name="Municipality" processRef="Process_05_executive_approval" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_05_executive_approval" name="Stage 5 — Executive approval" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_P5">
+      <bpmn:lane id="P5_Lane_LD" name="Licensing &amp; Inspection Directorate">
+        <bpmn:flowNodeRef>P5_s</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_t1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_t3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_g2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_t7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_g6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_eB</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="P5_Lane_DEP" name="Deputy Mayor">
+        <bpmn:flowNodeRef>P5_gM1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_t2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_g1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="P5_Lane_MAY" name="Mayor">
+        <bpmn:flowNodeRef>P5_t4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_g3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_gM2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_t6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_g5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_e</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="P5_Lane_SYS" name="Automated Notifications">
+        <bpmn:flowNodeRef>P5_t5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_g3m</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P5_eA</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="P5_s" name="License fee collected">
+      <bpmn:outgoing>P5_Flow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="P5_t1" name="Process license approval">
+      <bpmn:documentation>Source step O34: Sıhhi Müessese Ruhsat Başvurusu Onay İşlemi</bpmn:documentation>
+      <bpmn:incoming>P5_Flow_0</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_1</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P5_gM1">
+      <bpmn:incoming>P5_Flow_1</bpmn:incoming>
+      <bpmn:incoming>P5_Flow_8</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_2</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P5_t2" name="Approve license">
+      <bpmn:documentation>Source step O35: Başkan Yardımcısı - Sıhhi Müessese Ruhsat Onayı</bpmn:documentation>
+      <bpmn:incoming>P5_Flow_2</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_3</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P5_g1" name="Deputy mayor decision?">
+      <bpmn:incoming>P5_Flow_3</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_4</bpmn:outgoing>
+      <bpmn:outgoing>P5_Flow_5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P5_t3" name="Inform about cancellation of the application">
+      <bpmn:documentation>Source step O36: Sıhhi Müessese Ruhsat Başvurusu&#x27;nun İptalinin Bilgilendirmesi</bpmn:documentation>
+      <bpmn:incoming>P5_Flow_4</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_6</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P5_g2" name="Cancel or resubmit?">
+      <bpmn:incoming>P5_Flow_6</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_7</bpmn:outgoing>
+      <bpmn:outgoing>P5_Flow_8</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P5_t4" name="Process cancellation notification">
+      <bpmn:documentation>Source step O37: Sıhhi Müessese Ruhsat Başvurusu&#x27;nun İptali İçin Bilgilendirme İşlemi</bpmn:documentation>
+      <bpmn:incoming>P5_Flow_7</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_9</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P5_g3" name="E-mail address registered?">
+      <bpmn:incoming>P5_Flow_9</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_10</bpmn:outgoing>
+      <bpmn:outgoing>P5_Flow_11</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="P5_t5" name="Send cancellation e-mail">
+      <bpmn:documentation>Source step O38: [kurum içi e-posta servisi] Mail Task</bpmn:documentation>
+      <bpmn:incoming>P5_Flow_10</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_12</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:exclusiveGateway id="P5_g3m">
+      <bpmn:incoming>P5_Flow_11</bpmn:incoming>
+      <bpmn:incoming>P5_Flow_12</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_13</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="P5_eA" name="Cancelled — deputy mayor level">
+      <bpmn:incoming>P5_Flow_13</bpmn:incoming>
+      <bpmn:errorEventDefinition id="P5_eA_ed" errorRef="Err_Deputy" />
+    </bpmn:endEvent>
+    <bpmn:exclusiveGateway id="P5_gM2">
+      <bpmn:incoming>P5_Flow_5</bpmn:incoming>
+      <bpmn:incoming>P5_Flow_20</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_14</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="P5_t6" name="Approve license">
+      <bpmn:documentation>Source step O39: Sıhhi Müessese Ruhsat Başvurusu Onayı</bpmn:documentation>
+      <bpmn:incoming>P5_Flow_14</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_15</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P5_g5" name="Mayor decision?">
+      <bpmn:incoming>P5_Flow_15</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_16</bpmn:outgoing>
+      <bpmn:outgoing>P5_Flow_17</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="P5_e" name="License approved">
+      <bpmn:incoming>P5_Flow_16</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="P5_t7" name="Inform about application cancellation">
+      <bpmn:documentation>Source step O40: Sıhhi Müessese Ruhsat Başvurusu İptal Bilgilendirmesi</bpmn:documentation>
+      <bpmn:incoming>P5_Flow_17</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_18</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="P5_g6" name="Cancel or resubmit?">
+      <bpmn:incoming>P5_Flow_18</bpmn:incoming>
+      <bpmn:outgoing>P5_Flow_19</bpmn:outgoing>
+      <bpmn:outgoing>P5_Flow_20</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="P5_eB" name="Cancelled — mayor level">
+      <bpmn:incoming>P5_Flow_19</bpmn:incoming>
+      <bpmn:errorEventDefinition id="P5_eB_ed" errorRef="Err_Mayor" />
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="P5_Flow_0" sourceRef="P5_s" targetRef="P5_t1" />
+    <bpmn:sequenceFlow id="P5_Flow_1" sourceRef="P5_t1" targetRef="P5_gM1" />
+    <bpmn:sequenceFlow id="P5_Flow_2" sourceRef="P5_gM1" targetRef="P5_t2" />
+    <bpmn:sequenceFlow id="P5_Flow_3" sourceRef="P5_t2" targetRef="P5_g1" />
+    <bpmn:sequenceFlow id="P5_Flow_4" name="Cancel" sourceRef="P5_g1" targetRef="P5_t3" />
+    <bpmn:sequenceFlow id="P5_Flow_5" name="Approve" sourceRef="P5_g1" targetRef="P5_gM2" />
+    <bpmn:sequenceFlow id="P5_Flow_6" sourceRef="P5_t3" targetRef="P5_g2" />
+    <bpmn:sequenceFlow id="P5_Flow_7" name="Cancel application" sourceRef="P5_g2" targetRef="P5_t4" />
+    <bpmn:sequenceFlow id="P5_Flow_8" name="Resubmit (label added)" sourceRef="P5_g2" targetRef="P5_gM1" />
+    <bpmn:sequenceFlow id="P5_Flow_9" sourceRef="P5_t4" targetRef="P5_g3" />
+    <bpmn:sequenceFlow id="P5_Flow_10" name="Yes (label added)" sourceRef="P5_g3" targetRef="P5_t5" />
+    <bpmn:sequenceFlow id="P5_Flow_11" name="No (label added)" sourceRef="P5_g3" targetRef="P5_g3m" />
+    <bpmn:sequenceFlow id="P5_Flow_12" sourceRef="P5_t5" targetRef="P5_g3m" />
+    <bpmn:sequenceFlow id="P5_Flow_13" sourceRef="P5_g3m" targetRef="P5_eA" />
+    <bpmn:sequenceFlow id="P5_Flow_14" sourceRef="P5_gM2" targetRef="P5_t6" />
+    <bpmn:sequenceFlow id="P5_Flow_15" sourceRef="P5_t6" targetRef="P5_g5" />
+    <bpmn:sequenceFlow id="P5_Flow_16" name="Approve" sourceRef="P5_g5" targetRef="P5_e" />
+    <bpmn:sequenceFlow id="P5_Flow_17" name="Cancel" sourceRef="P5_g5" targetRef="P5_t7" />
+    <bpmn:sequenceFlow id="P5_Flow_18" sourceRef="P5_t7" targetRef="P5_g6" />
+    <bpmn:sequenceFlow id="P5_Flow_19" name="Cancel application" sourceRef="P5_g6" targetRef="P5_eB" />
+    <bpmn:sequenceFlow id="P5_Flow_20" name="Resubmit for approval" sourceRef="P5_g6" targetRef="P5_gM2" />
+    <bpmn:textAnnotation id="P5_a1"><bpmn:text>Two-level approval is internal practice. Art. 6: the license is signed by the head of the authority or a delegate.</bpmn:text></bpmn:textAnnotation>
+    <bpmn:association id="P5_a1_assoc" sourceRef="P5_a1" targetRef="P5_t2" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_P5" name="Stage 5 — Executive approval">
+    <bpmndi:BPMNPlane id="Plane_P5" bpmnElement="Collab_P5">
+      <bpmndi:BPMNShape id="Part_P5_di" bpmnElement="Part_P5" isHorizontal="true"><dc:Bounds x="10" y="20" width="2249" height="780" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_Lane_LD_di" bpmnElement="P5_Lane_LD" isHorizontal="true"><dc:Bounds x="40" y="20" width="2219" height="260" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_Lane_DEP_di" bpmnElement="P5_Lane_DEP" isHorizontal="true"><dc:Bounds x="40" y="280" width="2219" height="130" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_Lane_MAY_di" bpmnElement="P5_Lane_MAY" isHorizontal="true"><dc:Bounds x="40" y="410" width="2219" height="260" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_Lane_SYS_di" bpmnElement="P5_Lane_SYS" isHorizontal="true"><dc:Bounds x="40" y="670" width="2219" height="130" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_s_di" bpmnElement="P5_s"><dc:Bounds x="161" y="197" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="144" y="238" width="70" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_t1_di" bpmnElement="P5_t1"><dc:Bounds x="284" y="175" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_gM1_di" bpmnElement="P5_gM1" isMarkerVisible="true"><dc:Bounds x="494" y="320" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_t2_di" bpmnElement="P5_t2"><dc:Bounds x="624" y="305" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_g1_di" bpmnElement="P5_g1" isMarkerVisible="true"><dc:Bounds x="834" y="320" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="879" y="372" width="76" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_t3_di" bpmnElement="P5_t3"><dc:Bounds x="964" y="45" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_g2_di" bpmnElement="P5_g2" isMarkerVisible="true"><dc:Bounds x="1174" y="60" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1219" y="112" width="118" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_t4_di" bpmnElement="P5_t4"><dc:Bounds x="1389" y="565" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_g3_di" bpmnElement="P5_g3" isMarkerVisible="true"><dc:Bounds x="1599" y="580" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1644" y="550" width="88" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_t5_di" bpmnElement="P5_t5"><dc:Bounds x="1729" y="695" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_g3m_di" bpmnElement="P5_g3m" isMarkerVisible="true"><dc:Bounds x="1939" y="710" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_eA_di" bpmnElement="P5_eA"><dc:Bounds x="2116" y="717" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="2078" y="758" width="112" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_gM2_di" bpmnElement="P5_gM2" isMarkerVisible="true"><dc:Bounds x="1004" y="450" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_t6_di" bpmnElement="P5_t6"><dc:Bounds x="1134" y="435" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_g5_di" bpmnElement="P5_g5" isMarkerVisible="true"><dc:Bounds x="1344" y="450" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1389" y="502" width="94" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_e_di" bpmnElement="P5_e"><dc:Bounds x="1521" y="457" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="1489" y="498" width="100" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_t7_di" bpmnElement="P5_t7"><dc:Bounds x="1474" y="45" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_g6_di" bpmnElement="P5_g6" isMarkerVisible="true"><dc:Bounds x="1684" y="60" width="50" height="50" /><bpmndi:BPMNLabel><dc:Bounds x="1729" y="44" width="118" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_eB_di" bpmnElement="P5_eB"><dc:Bounds x="1861" y="67" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="1826" y="108" width="106" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P5_a1_di" bpmnElement="P5_a1"><dc:Bounds x="539" y="227" width="240" height="66" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="P5_Flow_0_di" bpmnElement="P5_Flow_0"><di:waypoint x="197" y="215" /><di:waypoint x="284" y="215" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_1_di" bpmnElement="P5_Flow_1"><di:waypoint x="414" y="215" /><di:waypoint x="454" y="215" /><di:waypoint x="454" y="345" /><di:waypoint x="494" y="345" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_2_di" bpmnElement="P5_Flow_2"><di:waypoint x="544" y="345" /><di:waypoint x="624" y="345" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_3_di" bpmnElement="P5_Flow_3"><di:waypoint x="754" y="345" /><di:waypoint x="834" y="345" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_4_di" bpmnElement="P5_Flow_4"><di:waypoint x="859" y="320" /><di:waypoint x="859" y="85" /><di:waypoint x="964" y="85" /><bpmndi:BPMNLabel><dc:Bounds x="865" y="289" width="33" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_5_di" bpmnElement="P5_Flow_5"><di:waypoint x="884" y="345" /><di:waypoint x="1029" y="345" /><di:waypoint x="1029" y="450" /><bpmndi:BPMNLabel><dc:Bounds x="890" y="327" width="38" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_6_di" bpmnElement="P5_Flow_6"><di:waypoint x="1094" y="85" /><di:waypoint x="1174" y="85" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_7_di" bpmnElement="P5_Flow_7"><di:waypoint x="1224" y="85" /><di:waypoint x="1304" y="85" /><di:waypoint x="1304" y="605" /><di:waypoint x="1389" y="605" /><bpmndi:BPMNLabel><dc:Bounds x="1230" y="67" width="99" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_8_di" bpmnElement="P5_Flow_8"><di:waypoint x="1199" y="60" /><di:waypoint x="1199" y="36" /><di:waypoint x="519" y="36" /><di:waypoint x="519" y="320" /><bpmndi:BPMNLabel><dc:Bounds x="1205" y="29" width="121" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_9_di" bpmnElement="P5_Flow_9"><di:waypoint x="1519" y="605" /><di:waypoint x="1599" y="605" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_10_di" bpmnElement="P5_Flow_10"><di:waypoint x="1624" y="630" /><di:waypoint x="1624" y="735" /><di:waypoint x="1729" y="735" /><bpmndi:BPMNLabel><dc:Bounds x="1630" y="647" width="94" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_11_di" bpmnElement="P5_Flow_11"><di:waypoint x="1649" y="605" /><di:waypoint x="1964" y="605" /><di:waypoint x="1964" y="710" /><bpmndi:BPMNLabel><dc:Bounds x="1655" y="587" width="88" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_12_di" bpmnElement="P5_Flow_12"><di:waypoint x="1859" y="735" /><di:waypoint x="1939" y="735" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_13_di" bpmnElement="P5_Flow_13"><di:waypoint x="1989" y="735" /><di:waypoint x="2116" y="735" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_14_di" bpmnElement="P5_Flow_14"><di:waypoint x="1054" y="475" /><di:waypoint x="1134" y="475" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_15_di" bpmnElement="P5_Flow_15"><di:waypoint x="1264" y="475" /><di:waypoint x="1344" y="475" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_16_di" bpmnElement="P5_Flow_16"><di:waypoint x="1394" y="475" /><di:waypoint x="1521" y="475" /><bpmndi:BPMNLabel><dc:Bounds x="1400" y="457" width="38" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_17_di" bpmnElement="P5_Flow_17"><di:waypoint x="1369" y="450" /><di:waypoint x="1369" y="85" /><di:waypoint x="1474" y="85" /><bpmndi:BPMNLabel><dc:Bounds x="1375" y="419" width="33" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_18_di" bpmnElement="P5_Flow_18"><di:waypoint x="1604" y="85" /><di:waypoint x="1684" y="85" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_19_di" bpmnElement="P5_Flow_19"><di:waypoint x="1734" y="85" /><di:waypoint x="1861" y="85" /><bpmndi:BPMNLabel><dc:Bounds x="1740" y="67" width="99" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_Flow_20_di" bpmnElement="P5_Flow_20"><di:waypoint x="1709" y="110" /><di:waypoint x="1709" y="533" /><di:waypoint x="1029" y="533" /><di:waypoint x="1029" y="500" /><bpmndi:BPMNLabel><dc:Bounds x="1715" y="127" width="116" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P5_a1_assoc_di" bpmnElement="P5_a1_assoc"><di:waypoint x="659" y="293" /><di:waypoint x="666" y="305" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

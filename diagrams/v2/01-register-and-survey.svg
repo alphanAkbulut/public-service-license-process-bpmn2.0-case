@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2694" height="1100" viewBox="0 0 2694 1100" font-family="'Source Sans 3', 'Segoe UI', Arial, sans-serif">
+<title>Stage 1 — Register application and survey site</title>
+<defs><marker id="seq" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#22201c"/></marker><marker id="seqa" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 1 L10 5 L0 9 Z" fill="#c8371e"/></marker><marker id="msg" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M1 1.5 L11 6 L1 10.5 Z" fill="#fff" stroke="#22201c" stroke-width="1"/></marker><marker id="msgstart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8"><circle cx="5" cy="5" r="3.5" fill="#fff" stroke="#22201c" stroke-width="1"/></marker></defs>
+<rect width="2694" height="1100" fill="#ffffff"/>
+<rect x="10" y="20" width="2674" height="1040" fill="#fff" stroke="#22201c" stroke-width="1.4"/>
+<line x1="40" y1="20" x2="40" y2="1060" stroke="#22201c" stroke-width="1.4"/>
+<text transform="translate(30.0,540.0) rotate(-90)" text-anchor="middle" font-size="13" font-weight="600" fill="#22201c">Municipality</text>
+<rect x="40" y="20" width="2644" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="20" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,150.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Licensing &amp; Inspection Directorate</tspan></text>
+<rect x="40" y="280" width="2644" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="280" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,345.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Records Office</tspan></text>
+<rect x="40" y="410" width="2644" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="410" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,540.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Real Estate Unit</tspan></text>
+<rect x="40" y="670" width="2644" height="130" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="670" width="44" height="130" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(59.5,735.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Automated</tspan><tspan x="0" dy="13">Notifications</tspan></text>
+<rect x="40" y="800" width="2644" height="260" fill="#fafaf7" stroke="#22201c" stroke-width="0.9"/>
+<rect x="40" y="800" width="44" height="260" fill="#efede4" stroke="#22201c" stroke-width="0.9"/>
+<text transform="translate(66.0,930.0) rotate(-90)" text-anchor="middle" font-size="11.5" fill="#22201c"><tspan x="0" dy="0">Cashier</tspan></text>
+<path d="M197.0 215.0 L284.0 215.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M414.0 215.0 L434.0 215.0 L434.0 605.0 L454.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M584.0 605.0 L664.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M714.0 605.0 L834.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M689.0 580.0 L689.0 345.0 L964.0 345.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M884.0 605.0 L964.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M859.0 580.0 L859.0 475.0 L2024.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1094.0 605.0 L1174.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1224.0 605.0 L1344.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1199.0 580.0 L1199.0 475.0 L2024.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1369.0 630.0 L1369.0 735.0 L1474.0 735.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1394.0 605.0 L1684.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1604.0 735.0 L1709.0 735.0 L1709.0 630.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1734.0 605.0 L1854.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1904.0 605.0 L1984.0 605.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1879.0 580.0 L1879.0 475.0 L2024.0 475.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2114.0 605.0 L2134.0 605.0 L2134.0 865.0 L2154.0 865.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2089.0 663.0 L2089.0 717.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2284.0 865.0 L2371.0 865.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2259.0 923.0 L2259.0 977.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2074.0 475.0 L2219.0 475.0 L2219.0 370.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M1094.0 345.0 L2194.0 345.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2219.0 320.0 L2219.0 215.0 L2324.0 215.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M2454.0 215.0 L2541.0 215.0" fill="none" stroke="#22201c" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#seq)"/>
+<path d="M629.0 487.0 L834.0 592.2" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="529.0" y="435.0" width="200" height="52" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M541.0 435.0 H529.0 V487.0 H541.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="537.0" y="452.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="537.0" dy="0">Gateway question and &#x27;No&#x27; label</tspan><tspan x="537.0" dy="14">added; source only labels the</tspan><tspan x="537.0" dy="14">&#x27;Accrual done&#x27; path</tspan></text>
+<path d="M2119.0 510.0 L2078.5 565.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="2119.0" y="477.0" width="230" height="66" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M2131.0 477.0 H2119.0 V543.0 H2131.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="2127.0" y="494.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="2127.0" dy="0">Escalation markers read as &#x27;debt due:</tspan><tspan x="2127.0" dy="14">transfer to collection&#x27;, based on the</tspan><tspan x="2127.0" dy="14">source note on accrual staff</tspan><tspan x="2127.0" dy="14">collecting debts that fall due</tspan></text>
+<path d="M216.5 163.0 L192.0 197.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="109.0" y="97.0" width="215" height="66" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M121.0 97.0 H109.0 V163.0 H121.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="117.0" y="114.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="117.0" dy="0">As-is: businesses usually opened</tspan><tspan x="117.0" dy="14">first and applied afterwards. Art.</tspan><tspan x="117.0" dy="14">6: premises opened without a</tspan><tspan x="117.0" dy="14">license are closed.</tspan></text>
+<path d="M369.0 130.0 L358.4 175.0" stroke="#6b6658" stroke-width="1.1" stroke-dasharray="2 3" fill="none"/>
+<rect x="369.0" y="97.0" width="300" height="66" fill="#fff" fill-opacity="0.85" stroke="none"/>
+<path d="M381.0 97.0 H369.0 V163.0 H381.0" stroke="#6b6658" stroke-width="1.2" fill="none"/>
+<text x="377.0" y="114.0" text-anchor="start" font-size="11" font-weight="400" fill="#6b6658"><tspan x="377.0" dy="0">Art. 6: a receipt (Örnek 6) is issued on</tspan><tspan x="377.0" dy="14">application. Art. 12: if the declaration meets</tspan><tspan x="377.0" dy="14">the criteria, a declaration-based license is</tspan><tspan x="377.0" dy="14">issued the same day.</tspan></text>
+<circle cx="179" cy="215.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.4"/><text x="179.0" y="249.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="179.0" dy="0">Application received</tspan><tspan x="179.0" dy="13.5">(business may</tspan><tspan x="179.0" dy="13.5">already be</tspan><tspan x="179.0" dy="13.5">operating)</tspan></text>
+<rect x="284.0" y="175.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(291.0,181.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="349.0" y="208.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="349.0" dy="0">Register documents,</tspan><tspan x="349.0" dy="14">check debts, take</tspan><tspan x="349.0" dy="14">declaration form</tspan></text>
+<rect x="454.0" y="565.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(461.0,571.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="519.0" y="605.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="519.0" dy="0">Start site survey</tspan><tspan x="519.0" dy="14">and accrual</tspan></text>
+<path d="M689 580.0 L714 605.0 L689 630.0 L664 605.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M689 595.0 V615.0 M679 605.0 H699" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M859 580.0 L884 605.0 L859 630.0 L834 605.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M851.5 597.5 L866.5 612.5 M866.5 597.5 L851.5 612.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="879.0" y="643.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="879.0" dy="0">Accrual already</tspan><tspan x="879.0" dy="13.5">done?</tspan></text>
+<rect x="964.0" y="565.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(971.0,571.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1029.0" y="612.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1029.0" dy="0">Approve site survey</tspan></text>
+<path d="M1199 580.0 L1224 605.0 L1199 630.0 L1174 605.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1191.5 597.5 L1206.5 612.5 M1206.5 597.5 L1191.5 612.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1219.0" y="643.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1219.0" dy="0">Business active?</tspan></text>
+<path d="M1369 580.0 L1394 605.0 L1369 630.0 L1344 605.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1361.5 597.5 L1376.5 612.5 M1376.5 597.5 L1361.5 612.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/><text x="1389.0" y="561.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="1389.0" dy="0">E-mail address</tspan><tspan x="1389.0" dy="13.5">registered?</tspan></text>
+<rect x="1474.0" y="695.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1482.0,703.0)"><rect x="0" y="0" width="15" height="10" fill="#22201c" stroke="#22201c" stroke-width="1.1"/><path d="M0 0 L7.5 5.5 L15 0" fill="none" stroke="#fff" stroke-width="1.1"/></g><text x="1539.0" y="728.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1539.0" dy="0">Send application</tspan><tspan x="1539.0" dy="14">info e-mail and</tspan><tspan x="1539.0" dy="14">accrual invitation</tspan></text>
+<path d="M1709 580.0 L1734 605.0 L1709 630.0 L1684 605.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1701.5 597.5 L1716.5 612.5 M1716.5 597.5 L1701.5 612.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M1879 580.0 L1904 605.0 L1879 630.0 L1854 605.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M1879 595.0 V615.0 M1869 605.0 H1889" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="1984.0" y="565.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(1991.0,571.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="2049.0" y="612.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="2049.0" dy="0">Record tax accrual</tspan></text>
+<circle cx="2089.0" cy="735.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="2115.0" y="732.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="2115.0" dy="0">Transferred to</tspan><tspan x="2115.0" dy="13.5">collection</tspan></text>
+<rect x="2154.0" y="825.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(2161.0,831.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="2219.0" y="858.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="2219.0" dy="0">Collect payment</tspan><tspan x="2219.0" dy="14">(municipal payment</tspan><tspan x="2219.0" dy="14">system)</tspan></text>
+<circle cx="2259.0" cy="995.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="2285.0" y="992.0" text-anchor="start" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="2285.0" dy="0">Transferred to</tspan><tspan x="2285.0" dy="13.5">collection</tspan></text>
+<circle cx="2389" cy="865.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="2389.0" y="899.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="2389.0" dy="0">Payment collected</tspan></text>
+<path d="M2049 450.0 L2074 475.0 L2049 500.0 L2024 475.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M2041.5 467.5 L2056.5 482.5 M2056.5 467.5 L2041.5 482.5" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="964.0" y="305.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(971.0,311.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="1029.0" y="345.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="1029.0" dy="0">Receive license</tspan><tspan x="1029.0" dy="14">application</tspan></text>
+<path d="M2219 320.0 L2244 345.0 L2219 370.0 L2194 345.0 Z" fill="#fff" stroke="#22201c" stroke-width="1.4"/><path d="M2219 335.0 V355.0 M2209 345.0 H2229" stroke="#22201c" stroke-width="3.4" stroke-linecap="round"/>
+<rect x="2324.0" y="175.0" width="130" height="80" rx="9" fill="#fbf6dc" stroke="#22201c" stroke-width="1.4"/><g transform="translate(2331.0,181.0)" fill="none" stroke="#22201c" stroke-width="1.1"><circle cx="7" cy="5" r="3.4" fill="#fff"/><path d="M1 15 Q1 9 7 9 Q13 9 13 15 Z" fill="#fff"/></g><text x="2389.0" y="208.0" text-anchor="middle" font-size="12" font-weight="400" fill="#22201c"><tspan x="2389.0" dy="0">Review site survey</tspan><tspan x="2389.0" dy="14">and front-office</tspan><tspan x="2389.0" dy="14">work</tspan></text>
+<circle cx="2559" cy="215.0" r="16.5" fill="#fff" stroke="#22201c" stroke-width="3.6"/><text x="2559.0" y="249.0" text-anchor="middle" font-size="11.5" font-weight="400" fill="#22201c"><tspan x="2559.0" dy="0">Application</tspan><tspan x="2559.0" dy="13.5">registered</tspan></text>
+<circle cx="2089" cy="645.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.3" stroke-dasharray="4 2.5"/><circle cx="2089" cy="645.0" r="14.5" fill="none" stroke="#22201c" stroke-width="1.3" stroke-dasharray="4 2.5"/><path d="M2089,637.0 L2095,652.0 L2089,647.0 L2083,652.0 Z" fill="none" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/>
+<circle cx="2259" cy="905.0" r="18.0" fill="#fff" stroke="#22201c" stroke-width="1.3" stroke-dasharray="4 2.5"/><circle cx="2259" cy="905.0" r="14.5" fill="none" stroke="#22201c" stroke-width="1.3" stroke-dasharray="4 2.5"/><path d="M2259,897.0 L2265,912.0 L2259,907.0 L2253,912.0 Z" fill="none" stroke="#22201c" stroke-width="1.1" stroke-linejoin="round"/>
+<rect x="888.0" y="587.0" width="92.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="890.0" y="598.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="890.0" dy="0">No (label added)</tspan></text>
+<rect x="863.0" y="549.0" width="70.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="865.0" y="560.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="865.0" dy="0">Accrual done</tspan></text>
+<rect x="1228.0" y="587.0" width="114.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1230.0" y="598.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="1230.0" dy="0">Active (label added)</tspan></text>
+<rect x="1203.0" y="549.0" width="108.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1205.0" y="560.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1205.0" dy="0">Business not active</tspan></text>
+<rect x="1373.0" y="647.0" width="97.5" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1375.0" y="658.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c"><tspan x="1375.0" dy="0">E-mail registered</tspan></text>
+<rect x="1398.0" y="587.0" width="92.0" height="14" fill="#fff" fill-opacity="0.9"/>
+<text x="1400.0" y="598.0" text-anchor="start" font-size="11" font-weight="400" fill="#22201c" font-style="italic"><tspan x="1400.0" dy="0">No (label added)</tspan></text>
+</svg>

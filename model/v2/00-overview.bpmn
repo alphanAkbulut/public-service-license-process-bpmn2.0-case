@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Defs_P0" targetNamespace="https://github.com/alphanAkbulut/public-service-license-process-bpmn2.0-case" exporter="tools/v2/build.py" exporterVersion="2.0">
+  <bpmn:error id="Err_Commission" name="Rejected by commission" errorCode="COMMISSION_REJECTED" />
+  <bpmn:error id="Err_Deputy" name="Cancelled: deputy mayor level" errorCode="CANCELLED_DEPUTY" />
+  <bpmn:error id="Err_Mayor" name="Cancelled: mayor level" errorCode="CANCELLED_MAYOR" />
+  <bpmn:error id="Err_Second" name="Cancelled: after second inspection" errorCode="SECOND_INSPECTION_FAILED" />
+  <bpmn:error id="Err_Zoning" name="Cancelled: zoning status" errorCode="ZONING_REJECTED" />
+  <bpmn:message id="Msg_Application" name="License application" />
+  <bpmn:category id="P0_g1_cat"><bpmn:categoryValue id="P0_g1_cv" value="Art. 13 — finalising inspection within 1 month" /></bpmn:category>
+  <bpmn:collaboration id="Collab_P0">
+    <bpmn:participant id="Part_P0" name="Municipality" processRef="Process_00_overview" />
+    <bpmn:participant id="Part_APP" name="Applicant (business owner)" />
+    <bpmn:messageFlow id="P0_MF_0" name="Application" sourceRef="Part_APP" targetRef="P0_S0" />
+    <bpmn:messageFlow id="P0_MF_1" name="Info e-mail, accrual invitation" sourceRef="P0_C1" targetRef="Part_APP" />
+    <bpmn:messageFlow id="P0_MF_2" name="Cancellation notice" sourceRef="P0_C3" targetRef="Part_APP" />
+    <bpmn:messageFlow id="P0_MF_3" name="Info e-mail, accrual invitation" sourceRef="P0_C4" targetRef="Part_APP" />
+    <bpmn:messageFlow id="P0_MF_4" name="Fee payment" sourceRef="Part_APP" targetRef="P0_C4" />
+    <bpmn:messageFlow id="P0_MF_5" name="Cancellation e-mail" sourceRef="P0_C5" targetRef="Part_APP" />
+    <bpmn:messageFlow id="P0_MF_6" name="License approval notice" sourceRef="P0_C6" targetRef="Part_APP" />
+    <bpmn:messageFlow id="P0_MF_7" name="Closure notice" sourceRef="P0_C7" targetRef="Part_APP" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_00_overview" name="Sanitary Establishment License — Overview" isExecutable="false">
+    <bpmn:startEvent id="P0_S0" name="License application submitted">
+      <bpmn:outgoing>P0_Flow_0</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="P0_S0_md" messageRef="Msg_Application" />
+    </bpmn:startEvent>
+    <bpmn:callActivity id="P0_C1" name="1 Register application and survey site" calledElement="Process_01_register_and_survey">
+      <bpmn:incoming>P0_Flow_0</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_1</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="P0_C2" name="2 Collect technical opinions" calledElement="Process_02_technical_opinions">
+      <bpmn:incoming>P0_Flow_1</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_2</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="P0_C3" name="3 Inspect premises" calledElement="Process_03_site_inspection">
+      <bpmn:incoming>P0_Flow_2</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_3</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="P0_C4" name="4 Commission review and fee collection" calledElement="Process_04_commission_and_fee">
+      <bpmn:incoming>P0_Flow_3</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_4</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="P0_C5" name="5 Executive approval" calledElement="Process_05_executive_approval">
+      <bpmn:incoming>P0_Flow_4</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_5</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="P0_C6" name="6 License and inform applicant" calledElement="Process_06_licensing">
+      <bpmn:incoming>P0_Flow_5</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_6</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="P0_E0" name="License issued">
+      <bpmn:incoming>P0_Flow_6</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:boundaryEvent id="P0_B3a" name="Zoning rejected" attachedToRef="P0_C3">
+      <bpmn:outgoing>P0_Flow_7</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="P0_B3a_ed" errorRef="Err_Zoning" />
+    </bpmn:boundaryEvent>
+    <bpmn:boundaryEvent id="P0_B3b" name="Failed second inspection" attachedToRef="P0_C3">
+      <bpmn:outgoing>P0_Flow_8</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="P0_B3b_ed" errorRef="Err_Second" />
+    </bpmn:boundaryEvent>
+    <bpmn:boundaryEvent id="P0_B4" name="Rejected by commission" attachedToRef="P0_C4">
+      <bpmn:outgoing>P0_Flow_9</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="P0_B4_ed" errorRef="Err_Commission" />
+    </bpmn:boundaryEvent>
+    <bpmn:boundaryEvent id="P0_B5a" name="Cancelled by deputy mayor level" attachedToRef="P0_C5">
+      <bpmn:outgoing>P0_Flow_10</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="P0_B5a_ed" errorRef="Err_Deputy" />
+    </bpmn:boundaryEvent>
+    <bpmn:boundaryEvent id="P0_B5b" name="Cancelled at mayor level" attachedToRef="P0_C5">
+      <bpmn:outgoing>P0_Flow_11</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="P0_B5b_ed" errorRef="Err_Mayor" />
+    </bpmn:boundaryEvent>
+    <bpmn:exclusiveGateway id="P0_GC">
+      <bpmn:incoming>P0_Flow_7</bpmn:incoming>
+      <bpmn:incoming>P0_Flow_8</bpmn:incoming>
+      <bpmn:incoming>P0_Flow_9</bpmn:incoming>
+      <bpmn:incoming>P0_Flow_10</bpmn:incoming>
+      <bpmn:incoming>P0_Flow_11</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_12</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:callActivity id="P0_C7" name="C Cancel license and close premises" calledElement="Process_07_cancellation_and_closure">
+      <bpmn:incoming>P0_Flow_12</bpmn:incoming>
+      <bpmn:outgoing>P0_Flow_13</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="P0_EC" name="Premises closed">
+      <bpmn:incoming>P0_Flow_13</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="P0_Flow_0" sourceRef="P0_S0" targetRef="P0_C1" />
+    <bpmn:sequenceFlow id="P0_Flow_1" sourceRef="P0_C1" targetRef="P0_C2" />
+    <bpmn:sequenceFlow id="P0_Flow_2" sourceRef="P0_C2" targetRef="P0_C3" />
+    <bpmn:sequenceFlow id="P0_Flow_3" sourceRef="P0_C3" targetRef="P0_C4" />
+    <bpmn:sequenceFlow id="P0_Flow_4" sourceRef="P0_C4" targetRef="P0_C5" />
+    <bpmn:sequenceFlow id="P0_Flow_5" sourceRef="P0_C5" targetRef="P0_C6" />
+    <bpmn:sequenceFlow id="P0_Flow_6" sourceRef="P0_C6" targetRef="P0_E0" />
+    <bpmn:sequenceFlow id="P0_Flow_7" name="Zoning rejected" sourceRef="P0_B3a" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_8" name="Failed 2nd inspection" sourceRef="P0_B3b" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_9" name="Commission rejected" sourceRef="P0_B4" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_10" name="Deputy mayor level" sourceRef="P0_B5a" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_11" name="Mayor level" sourceRef="P0_B5b" targetRef="P0_GC" />
+    <bpmn:sequenceFlow id="P0_Flow_12" sourceRef="P0_GC" targetRef="P0_C7" />
+    <bpmn:sequenceFlow id="P0_Flow_13" sourceRef="P0_C7" targetRef="P0_EC" />
+    <bpmn:textAnnotation id="P0_a1"><bpmn:text>Business is usually already operating when it applies (as-is practice). Art. 6: premises opened without a license are closed.</bpmn:text></bpmn:textAnnotation>
+    <bpmn:association id="P0_a1_assoc" sourceRef="P0_a1" targetRef="P0_S0" />
+    <bpmn:group id="P0_g1" categoryValueRef="P0_g1_cv" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_P0" name="Sanitary Establishment License — Overview">
+    <bpmndi:BPMNPlane id="Plane_P0" bpmnElement="Collab_P0">
+      <bpmndi:BPMNShape id="Part_P0_di" bpmnElement="Part_P0" isHorizontal="true"><dc:Bounds x="10" y="160" width="1739" height="260" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Part_APP_di" bpmnElement="Part_APP" isHorizontal="true"><dc:Bounds x="10" y="20" width="1739" height="70" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_S0_di" bpmnElement="P0_S0"><dc:Bounds x="161" y="207" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="120" y="248" width="118" height="28" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_C1_di" bpmnElement="P0_C1"><dc:Bounds x="284" y="185" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_C2_di" bpmnElement="P0_C2"><dc:Bounds x="454" y="185" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_C3_di" bpmnElement="P0_C3"><dc:Bounds x="624" y="185" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_C4_di" bpmnElement="P0_C4"><dc:Bounds x="794" y="185" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_C5_di" bpmnElement="P0_C5"><dc:Bounds x="964" y="185" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_C6_di" bpmnElement="P0_C6"><dc:Bounds x="1134" y="185" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_E0_di" bpmnElement="P0_E0"><dc:Bounds x="1351" y="207" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="1325" y="248" width="88" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_B3a_di" bpmnElement="P0_B3a"><dc:Bounds x="639" y="247" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_B3b_di" bpmnElement="P0_B3b"><dc:Bounds x="703" y="247" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_B4_di" bpmnElement="P0_B4" bioc:stroke="#c8371e" bioc:fill="#fbe9e4"><dc:Bounds x="841" y="247" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_B5a_di" bpmnElement="P0_B5a"><dc:Bounds x="979" y="247" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_B5b_di" bpmnElement="P0_B5b"><dc:Bounds x="1043" y="247" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_GC_di" bpmnElement="P0_GC" isMarkerVisible="true"><dc:Bounds x="1259" y="330" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_C7_di" bpmnElement="P0_C7" bioc:stroke="#c8371e" bioc:fill="#fbe9e4"><dc:Bounds x="1389" y="315" width="130" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_EC_di" bpmnElement="P0_EC"><dc:Bounds x="1606" y="337" width="36" height="36" /><bpmndi:BPMNLabel><dc:Bounds x="1577" y="378" width="94" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P0_a1_di" bpmnElement="P0_a1"><dc:Bounds x="44" y="300" width="205" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="P0_Flow_0_di" bpmnElement="P0_Flow_0"><di:waypoint x="197" y="225" /><di:waypoint x="284" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_1_di" bpmnElement="P0_Flow_1"><di:waypoint x="414" y="225" /><di:waypoint x="454" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_2_di" bpmnElement="P0_Flow_2"><di:waypoint x="584" y="225" /><di:waypoint x="624" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_3_di" bpmnElement="P0_Flow_3"><di:waypoint x="754" y="225" /><di:waypoint x="794" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_4_di" bpmnElement="P0_Flow_4"><di:waypoint x="924" y="225" /><di:waypoint x="964" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_5_di" bpmnElement="P0_Flow_5"><di:waypoint x="1094" y="225" /><di:waypoint x="1134" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_6_di" bpmnElement="P0_Flow_6"><di:waypoint x="1264" y="225" /><di:waypoint x="1351" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_7_di" bpmnElement="P0_Flow_7" bioc:stroke="#c8371e"><di:waypoint x="657" y="283" /><di:waypoint x="657" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="568" y="300" width="82" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_8_di" bpmnElement="P0_Flow_8" bioc:stroke="#c8371e"><di:waypoint x="721" y="283" /><di:waypoint x="721" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="727" y="300" width="116" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_9_di" bpmnElement="P0_Flow_9" bioc:stroke="#c8371e"><di:waypoint x="859" y="283" /><di:waypoint x="859" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="865" y="300" width="104" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_10_di" bpmnElement="P0_Flow_10" bioc:stroke="#c8371e"><di:waypoint x="997" y="283" /><di:waypoint x="997" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="892" y="300" width="99" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_11_di" bpmnElement="P0_Flow_11" bioc:stroke="#c8371e"><di:waypoint x="1061" y="283" /><di:waypoint x="1061" y="355" /><di:waypoint x="1259" y="355" /><bpmndi:BPMNLabel><dc:Bounds x="1067" y="300" width="60" height="14" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_12_di" bpmnElement="P0_Flow_12" bioc:stroke="#c8371e"><di:waypoint x="1309" y="355" /><di:waypoint x="1389" y="355" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_Flow_13_di" bpmnElement="P0_Flow_13" bioc:stroke="#c8371e"><di:waypoint x="1519" y="355" /><di:waypoint x="1606" y="355" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="P0_g1_di" bpmnElement="P0_g1"><dc:Bounds x="266" y="167" width="506" height="142" /><bpmndi:BPMNLabel><dc:Bounds x="274" y="287" width="264" height="16" /></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="P0_a1_assoc_di" bpmnElement="P0_a1_assoc"><di:waypoint x="146" y="300" /><di:waypoint x="171" y="243" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_0_di" bpmnElement="P0_MF_0"><di:waypoint x="179" y="90" /><di:waypoint x="179" y="207" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_1_di" bpmnElement="P0_MF_1"><di:waypoint x="349" y="185" /><di:waypoint x="349" y="90" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_2_di" bpmnElement="P0_MF_2"><di:waypoint x="689" y="185" /><di:waypoint x="689" y="90" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_3_di" bpmnElement="P0_MF_3"><di:waypoint x="837" y="185" /><di:waypoint x="837" y="90" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_4_di" bpmnElement="P0_MF_4"><di:waypoint x="881" y="90" /><di:waypoint x="881" y="185" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_5_di" bpmnElement="P0_MF_5"><di:waypoint x="1029" y="185" /><di:waypoint x="1029" y="90" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_6_di" bpmnElement="P0_MF_6"><di:waypoint x="1199" y="185" /><di:waypoint x="1199" y="90" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="P0_MF_7_di" bpmnElement="P0_MF_7"><di:waypoint x="1454" y="315" /><di:waypoint x="1454" y="90" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
