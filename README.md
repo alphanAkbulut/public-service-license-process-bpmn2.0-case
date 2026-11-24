@@ -1,6 +1,6 @@
 # Municipal License Process Modeling with BPMN 2.0
 
-End-to-end analysis and BPMN 2.0 modeling of a municipal licence process, completed during my work as a Business Analyst at Universal Bilgi Teknolojileri. The model was the foundation of a working software flow and was implemented in the product.
+End-to-end analysis and BPMN 2.0 modeling of a municipal licence process, completed during my work as a Business Analyst at a company building software for municipalities. The model was the foundation of a working software flow and was implemented in the product.
 
 The process licenses *sıhhi* premises (shops, cafés, restaurants without alcohol service) in an Istanbul district municipality, around 2014–2015. It is a **software process map**: each user task is a screen or form in the municipal system, where staff enter data, scan documents such as the tax certificate and issue printed documents.
 
